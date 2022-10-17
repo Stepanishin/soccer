@@ -1,0 +1,102 @@
+/* DESCRIPTION ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.collections_container {
+    margin-top: 55px;
+}
+
+/* .vector39 {
+    position: absolute;
+    width: 3071.45px;
+    height: 2672.45px;
+    left: 1069.8px;
+    top: -808.67px;
+    background: linear-gradient(91.11deg, #00D1FF 25.79%, #FF54CF 75.27%);
+    mix-blend-mode: normal;
+    filter: blur(67px);
+    transform: matrix(0.98, 0.1, -0.18, 0.99, 0, 0);
+} */
+
+.collections_title {
+    font-family: 'Bakemono Stereo Trial 700';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 159%;
+    color: #FFC700;
+    margin-bottom: 63px;
+}
+
+.collections_alpha {
+    display: flex;
+    gap: 106px;
+    justify-content: center;
+}
+
+.collections_alpha_img {
+    width: 560px;
+    height: 560px;
+}
+
+.collections_alpha_content {
+    
+}
+
+.collections_alpha_content-title {
+    font-family: 'Bakemono Stereo Trial 700';
+    font-size: 36px;
+    line-height: 78%;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+    position: relative;
+    top: 9px;
+}
+
+.collections_alpha_content-title span {
+    font-family: 'Bakemono Stereo Trial 300';
+    font-size: 36px;
+    line-height: 78%;
+    text-transform: uppercase;
+}
+
+.collections_alpha_content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.collections_alpha_content-list li {
+    position: relative;
+}
+
+.collections_alpha_content-list li::before {
+    position: absolute;
+    content: url('../img/mark.svg');
+    width: 17.2px;
+    height: 16.3px;
+    left: -35px;
+    top: -2px;
+}
+
+.collections_soccer {
+    margin-top: 125px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.collections_soccer_content {
+    padding-left: 30px;
+}
+
+.collections_link {
+    display: block;
+    margin: 160px auto 0 auto;
+    background: #FFC700;
+    border-radius: 7.53124px;
+    font-family: 'TT Norms Pro 500';
+    font-size: 36px;
+    line-height: 126%;
+    width: fit-content;
+    letter-spacing: 0.188281px;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 17px 20px;
+}

@@ -1,0 +1,389 @@
+.info {
+    min-height: 100vh;
+    background-image: url('../img/info/info_bg.png');
+    background-position: 4%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.info_container {
+    padding-bottom: 50px;
+}
+
+.info_description {
+    position: relative;
+    padding-top: 176px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    z-index: 2;
+}
+
+.info_description_title {
+    font-family: 'Bakemono Stereo Trial 700';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72.3038px;
+    line-height: 82%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFC700;
+    max-width: 460px;
+}
+
+.info_description_title span {
+    color: #FFFFFF;
+}
+
+.info_description_text {
+    font-size: 20px;
+    line-height: 130%;
+    max-width: 421px;
+}
+
+.info_description_btn {
+    margin-top: 17px;
+    background: #FFC700;
+    border-radius: 4px;
+    padding: 8.36px 17.7px;
+    font-family: 'TT Norms Pro 500';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #000000;
+    width: 181px;
+    height: 40px;
+    position: relative;
+    top: 13px;
+}
+
+.info_description_btn:hover {
+    background: #FF913B;;
+}
+
+.info_stats {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 101px;
+}
+
+.info_stats_soccer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.info_stats_alpha {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.info_stats_list {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    align-items: center;
+}
+
+.info_stats_list-soccer {
+    padding: 18px 33px;
+    gap: 43px;
+}
+
+.info_stats_list-alpha {
+    padding: 18px 36px;
+    gap: 34px;
+}
+
+.info_stats_title {
+    font-family: 'TT Norms Pro 700';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    text-transform: uppercase;
+    color: #D9D9D9;
+}
+
+.info_stats_list_svg {
+    width: 3px;
+    height: 46px;
+}
+
+.info_stats_list_item-title {
+    text-align: center;
+}
+
+.info_stats_list_item-content {
+    font-family: 'TT Norms Pro 700';
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+}
+
+.info_stats_list_item-btn {
+    display: block;
+    width: 70px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    color: #000000;
+    font-family: 'TT Norms Pro 500';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 16px;
+}
+
+.info_stats_list_item-btn:hover {
+    background: #FF913B;
+}
+
+/* DECORATION */
+.Rectangle15 {
+    z-index: 0;
+    position: absolute;
+    width: 1193.31px;
+    height: 728.51px;
+    left: -296.69px;
+    top: -62.2px;
+    background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+    transform: rotate(-45.66deg);
+}
+/*  */
+@media screen and (max-width: 1439px) {
+    .info {
+        min-height: 570px;
+        height: 570px;
+    }
+    .info_description {
+        padding-top: 161px;
+        gap: 16px;
+    }
+    .info_description_title {
+        font-size: 62px;
+        line-height: 82%;
+    }
+    .info_description_text {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .info_description_btn {
+        margin-top: 12px;
+        padding: 7.36px 17px;
+        width: 171px;
+    }
+    .info_stats {
+        margin-top: 189px;
+        gap: 15px;
+        justify-content: center;
+    }
+    .info_stats_soccer {
+        gap: 14px;
+        position: relative;
+        left: 7px;
+    }  
+    .info_stats_alpha {
+        gap: 14px;
+        position: relative;
+        left: 7px;
+    }
+    .info_stats_list-soccer {
+        padding: 10px 27px;
+        gap: 25px;
+        height: 64px;
+        width: 358px;
+    }
+    .info_stats_list-alpha {
+        padding: 10px 36px;
+        gap: 15px;
+        height: 64px;
+        width: 546px;
+    }
+    .info_stats_title {
+        font-size: 14px;
+        line-height: 200%;
+    }
+    .info_stats_list_svg {
+        width: 3px;
+        height: 35px;
+    }
+    .info_stats_list_item-title {
+        font-size: 14px;
+        line-height: 24px;
+    }  
+    .info_stats_list_item-content {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .info_stats_list_item-btn {
+        width: 70px;
+        height: 33px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .info {
+        height: 476px;
+        min-height: auto;
+        background-position-x: 51%;
+        background-position-y: -14px;
+    }
+    .info_description {
+        padding-top: 131px;
+        gap: 9px;
+    }
+    .info_description_title {
+        font-size: 50px;
+        line-height: 82%;
+    }
+    .info_description_text {
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 350px;
+    }
+    .info_description_btn {
+        width: 165px;
+    }
+    .info_stats {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 177px;
+        gap: 50px;
+    }
+    .info_stats_soccer {
+        align-items: center;
+        gap: 8px;
+        left: auto;
+    }
+    .info_stats_alpha {
+        align-items: center;
+        gap: 9px;
+        left: auto;
+    }
+    /* DECORATION */
+    .Rectangle15 {
+        width: 935.61px;
+        height: 571.18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info {
+        height: 365px;
+        min-height: auto;
+        background-position-x: 80%;
+        background-position-y: -17px;
+    }
+    .info_description {
+        padding-top: 381px;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_description_title {
+        text-align: center;
+    }
+    .info_description_text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 130%;
+        position: relative;
+        top: 10px;
+    }
+    .info_description_btn {
+        width: 164px;
+        height: 40px;
+        top: 35px;
+        left: 10px;
+    }
+    .info_stats {
+        margin-top: 240px;
+        gap: 61px;
+    }
+    .info_stats_list {
+        width: 400px;
+    }
+    .info_stats_list-alpha{
+        gap: 0px;
+        padding: 10px 0px;
+        width: 400px;
+    }
+    .info_stats_list_item_last {
+        position: absolute;
+        bottom: -47px;
+    }
+    .info_stats_list_item-btn {
+        width: 96px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .info_stats_list_svg_last {
+        display: none;
+    }
+    /* DECORATION */
+    .Rectangle15 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .info {
+        height: 302px;
+        background-position-x: 71%;
+        background-position-y: 0px;
+    }
+    .info_description_title {
+        font-size: 47.4926px;
+        line-height: 82%;
+    }
+    .info_description_text{
+        font-size: 13.2979px;
+        line-height: 130%;
+    }
+    .info_description_btn {
+        top: 30px;
+    }
+    .info_stats {
+        margin-top: 180px;
+        gap: 28px;
+    }
+    .info_stats_list {
+        width: 310px;
+    }
+    .info_stats_list_item-title {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .info_stats_list_item-content {
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .info_description_title {
+        font-size: 12vw;
+    }
+    .info_stats_list {
+        width: 95vw;
+    }
+}

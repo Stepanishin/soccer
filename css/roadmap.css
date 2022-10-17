@@ -1,0 +1,27 @@
+.roadmap_container {
+    z-index: 3;
+    margin-top: 490px;
+}
+
+.roadmap_title {
+    font-family: 'Bakemono Stereo Trial 700';
+    font-size: 48px;
+    line-height: 159%;
+    text-transform: uppercase;
+    color: #FFC700;
+}
+
+.roadmap_content_container {
+    margin-top: 50px;
+    position: relative;
+}
+
+.roadmap_content_vector-all {
+    position: absolute;
+    top: 0;
+}
+
+.roadmap_content_vector-complete {
+    position: absolute;
+    top: 0;
+}
