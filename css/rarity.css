@@ -1,11 +1,21 @@
-@font-face {
-  font-family: "TT_NORMS_Pro";
-  src: url("../fonts/TT\ Norms\ Pro\ Regular.otf");
+.rarity_container {
+  margin-top: 10px;
 }
 
-@font-face {
-  font-family: "TT_NORMS_Pro_BOLD";
-  src: url("../fonts/TT\ Norms\ Pro\ Bold.otf");
+.rarity_title {
+  font-family: 'Bakemono Stereo Trial 700';
+  font-size: 48px;
+  line-height: 82%;
+  text-transform: uppercase;
+  color: #FFC700;
+}
+
+.rarity_title span {
+  font-family: 'Bakemono Stereo Trial 300';
+  font-size: 48px;
+  line-height: 82%;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .wrapper {
@@ -45,7 +55,7 @@
 .groupsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 15px;
   justify-content: space-between;
 }
 
@@ -70,56 +80,61 @@
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 44px;
 }
 
 .token {
-  width: 17%;
-  margin-right: 2%;
-  margin-top: 20px;
-  border: 1px solid #584a65;
-  background-color: #2a183a;
-  min-height: 150px;
+  width: 94.88px;
+  height: 121.41px;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  /* border-image-source: linear-gradient(101.54deg, rgba(255, 255, 255, 0.61) 10.23%, rgba(255, 255, 255, 0.183) 100%); */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  /* padding: 14.7px 17.7px; */
+  padding-top: 5px;
 }
 
 .groupTitle {
-  font-family: "TT_NORMS_Pro";
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 32px;
-  padding-bottom: 30px;
+  font-family: 'TT Norms Pro 700';
+  font-size: 36px;
+  color: #FFFFFF;
 }
 
 .tokenImg {
-  width: 80%;
+  /* width: 80%;
   margin: 8px auto 0px auto;
+  display: block; */
   display: block;
+  width: 59.48px;
+  height: 57.49px;
 }
 
 .tokenPercent {
-  font-family: "TT_NORMS_Pro";
-  color: #ffffff;
-  font-size: 16px;
+  font-family: 'TT Norms Pro 400';
+  font-size: 14px;
+  color: #FFFFFF;
+  position: relative;
+  top: 8px;
   text-align: center;
-  margin-top: 15px;
 }
 
 .tokenName {
   text-align: center;
-  font-family: "TT_NORMS_Pro";
+  font-family: 'TT Norms Pro 400';
   color: rgba(255, 255, 255, 0.45);
-  font-size: 13px;
-  padding-bottom: 10px;
-  height: 30px;
+  font-size: 10px;
 }
 
 .rarityChecker {
-  width: 90%;
-  height: 240px;
-  background-color: #ffc700;
+  height: 260px;
+  background: #FFC700;
   border-radius: 14px;
   margin-top: 70px;
   padding: 0 5%;
@@ -143,10 +158,11 @@
 }
 
 .rarityCheckerTitle {
-  font-family: "TT_NORMS_Pro_BOLD";
-  color: #000000;
-  font-size: 34px;
-  font-weight: 800;
+  font-family: 'Bakemono Stereo Trial 800';
+  font-size: 36px;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #1D093B;
 }
 
 .rarityCheckerSubtitle {

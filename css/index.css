@@ -2,20 +2,24 @@
 
 @font-face {
     font-family:'Bakemono Stereo Trial 700';
-    /* src:url('../fonts/font700.woff') format("truetype"); */
-    src: url('../fonts/font3.woff   ');
+    src: url('../fonts/BAKEMONO-STEREO-BOLD-TRIAL.woff2');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family:'Bakemono Stereo Trial 800';
+    src: url('../fonts/BAKEMONO-STEREO-EXTRABOLD-TRIAL.woff2');
     font-weight: 800;
 }
 
 @font-face {
     font-family:'Bakemono Stereo Trial 300';
-    src:url('../fonts/font300.woff') format('woff');
+    src:url('../fonts/BAKEMONO-STEREO-LIGHT-TRIAL.woff2');
     font-weight: 300;
 }
 
 @font-face {
     font-family:'TT Norms Pro 400';
-    /* src:url('../fonts/TT\ Norms\ Pro\ Regular.otf'); */
     src: url('../fonts/TTNORMSPRO-REGULAR.TTF');
     font-weight: 400;
 }
@@ -23,13 +27,17 @@
 @font-face {
     font-family:'TT Norms Pro 500';
     src:url('../fonts/TT\ Norms\ Pro\ Medium.otf');
-    font-weight: 500;
 }
 
 @font-face {
     font-family: "TT Norms Pro 700";
     src: url("../fonts/TT\ Norms\ Pro\ Bold.otf");
     font-weight: 700;
+}
+
+@font-face {
+    font-family: "TT Norms Pro 300";
+    src: url("../fonts/TTNORMSPRO-THIN.TTF");
 }
 
 /* Specification/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -44,7 +52,8 @@ body {
     line-height: 140%;
     /* color: #FFFFFF; */
     color: #D9D9D9;
-    background: linear-gradient(196.63deg, #1C0236 32.31%, #000000 114.04%);
+    /* background: linear-gradient(196.63deg, #1C0236 32.31%, #000000 114.04%); */
+    background: #1C0236;
 }
 main {
     overflow: hidden;
@@ -140,43 +149,3 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* RARITY/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.rarity_container {
-    margin-top: 320px;
-}
-
-.rarity_title {
-    font-family: 'Bakemono Stereo Trial 700';
-    font-size: 48px;
-    line-height: 82%;
-    text-transform: uppercase;
-    color: #FFC700;
-}
-
-.rarity_title span {
-    font-family: 'Bakemono Stereo Trial 300';
-    font-size: 48px;
-    line-height: 82%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}

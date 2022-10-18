@@ -97,16 +97,22 @@
 
         <!-- info section -->
         <section class="info">
-            <div class="Rectangle15"></div>
+            <div class="info_bg"></div>
+            <img class="info_bg1" src="./img/info/bg1.svg" alt="">
+            <div class="info_bg2"></div>
+            <!-- <div class="info_bg3bg4_container">
+              <img class="info_bg4" src="./img/info/bg4.svg" alt="">
+              <img class="info_bg3" src="./img/info/bg3.svg" alt=""> 
+            </div>           -->
             <div class="container info_container" >
                 <div class="info_description">
-                    <h1 class="info_description_title">Think&Earn <span>NFT Game</span></h1>
+                    <h1 class="info_description_title">Think<span class="info_description_title_top">&</span>Earn <span class="info_description_title_bottom">NFT Game</span></h1>
                     <p class="info_description_text">Lazy Soccer is a football management simulator developed with NFT integrations and its own crypto token as an ”in-game currency”</p>
                     <button class="info_description_btn">Read Whitepaper</button>
                 </div>
                 <div class="info_stats" >
                     <div class="info_stats_soccer">
-                        <h2 class="info_stats_title">Lazy Soccer Staff → Upcoming mint </h2>
+                        <h2 class="info_stats_title">Lazy Soccer Staff → <span>Upcoming mint</span> </h2>
                         <div class="info_stats_list info_stats_list-soccer">
                             <div class="info_stats_list_item" >
                                 <p class="info_stats_list_item-title">Supply</p>
@@ -129,7 +135,7 @@
                         </div>
                     </div>
                     <div class="info_stats_alpha">
-                        <h2 class="info_stats_title">Lazy alpha  → completed mint </h2>
+                        <h2 class="info_stats_title">Lazy alpha  → <span>completed mint</span> </h2>
                         <div class="info_stats_list info_stats_list-alpha">
                             <div class="info_stats_list_item" >
                                 <p class="info_stats_list_item-title">Supply</p>
@@ -171,15 +177,21 @@
 
         <!-- collections section -->
         <section class="collections" >
-            <div class="vector39" ></div>
+          <!-- <div class="collections_bg1bg2_container">
+            <img class="collections_bg1" src="./img/collections/bg1.svg" alt="">
+            <img class="collections_bg2" src="./img/collections/bg2.svg" alt=""> 
+          </div>    -->
 
             <div class="container collections_container">
                 <h2 class="collections_title">NFT COLLECTIONS</h2>
 
                 <div class="collections_alpha">
-                    <img class="collections_alpha_img" src="./img/lazyAlpha.png" alt="Lazy Alpha NFT">
+                    <div style="position: relative;">
+                      <div class="collections_alpha_img_bg"></div>
+                      <img class="collections_alpha_img" src="./img/lazyAlpha.png" alt="Lazy Alpha NFT">
+                    </div>
                     <div class="collections_alpha_content">
-                        <h3 class="collections_alpha_content-title">Lazy alpha <span>(LA)</span></h3>
+                        <h3 class="collections_alpha_content-title">Lazy Alpha <span>(LA)</span></h3>
                         <ul class="collections_alpha_content-list">
                             <li>A limited alpha collection with a supply of only 1000 NFTs. The main benefits will be available for long-term holders of at least two Lazy Alpha NFTs that are held on the same wallet</li>
                             <li>Membership in the DAO and alpha chat with access to the most exciting projects of the Solana ecosystem at an early stage will be available for holders of at least two Lazy Alpha NFTs</li>
@@ -193,7 +205,7 @@
                 
                 <div class="collections_soccer">
                     <div class="collections_soccer_content">
-                        <h3 class="collections_soccer_content-title">Lazy SOCCER MANAGER <span>(LSM)</span></h3>
+                        <h3 class="collections_soccer_content-title">Lazy Soccer Manager <span>(LSM)</span></h3>
                         <ul class="collections_soccer_content-list">
                             <li>A collection to access the Lazy Soccer game. In order to play, you will need either Lazy Soccer Manager Genesis NFT (original collection with a limited supply of 5000 NFTs) or Lazy Soccer Manager NFT (NFTs minted for tokens by Lazy Alpha NFT holders);</li>
                             <li>The Lazy Soccer Manager Genesis NFTs will work as a multiplier and provide small game benefits depending on the rarity. Lazy Soccer Manager NFTs minted by the holders of Lazy Alpha NFTs are not multipliers, but give the right to play the game;</li>
@@ -201,7 +213,10 @@
                             <li>A possible airdrops of the following collections for the Lazy Soccer Manager Genesis NFT holders.</li>
                         </ul>
                     </div>
-                    <img class="collections_alpha_img" src="./img/lazySoccer.png" alt="Lazy Soccer NFT">
+                    <div style="position: relative;">
+                      <div class="collections_soccer_img_bg"></div>
+                      <img class="collections_alpha_img" src="./img/lazySoccer.png" alt="Lazy Soccer NFT">
+                    </div>
                 </div>
 
                 <a class="collections_link" href="#">All Collections</a>
@@ -210,7 +225,7 @@
         </section>
 
         <!-- rarity section -->
-        <!-- <section class="rarity" >
+        <section class="rarity" >
             <div class="container rarity_container" >
                 <h2 class="rarity_title" >Rarity<span> | Lazy Alpha</span></h2>
                 <div class="groupsContainer">
@@ -276,7 +291,7 @@
                   </div>
             </div>
 
-        </section> -->
+        </section>
 
         <!-- roadmap section -->
         <!-- <section>

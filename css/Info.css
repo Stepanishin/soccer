@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
+    overflow: hidden;
 }
 
 .info_container {
@@ -23,8 +24,6 @@
 
 .info_description_title {
     font-family: 'Bakemono Stereo Trial 700';
-    font-style: normal;
-    font-weight: 800;
     font-size: 72.3038px;
     line-height: 82%;
     letter-spacing: 2px;
@@ -32,8 +31,13 @@
     color: #FFC700;
     max-width: 460px;
 }
+.info_description_title_top {
+    font-family: 'Bakemono Stereo Trial 300';
+    color: #FFC700;
+}
 
-.info_description_title span {
+.info_description_title_bottom {
+    font-family: 'Bakemono Stereo Trial 700';
     color: #FFFFFF;
 }
 
@@ -115,6 +119,11 @@
     color: #D9D9D9;
 }
 
+.info_stats_title span {
+    font-family:'TT Norms Pro 300';
+    color: #D9D9D9;
+}
+
 .info_stats_list_svg {
     width: 3px;
     height: 46px;
@@ -156,7 +165,7 @@
 }
 
 /* DECORATION */
-.Rectangle15 {
+.info_bg {
     z-index: 0;
     position: absolute;
     width: 1193.31px;
@@ -165,6 +174,43 @@
     top: -62.2px;
     background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
     transform: rotate(-45.66deg);
+}
+.info_bg1 {
+    position: absolute;
+    width: 1388.6px;
+    height: 1047.49px;
+    left: 1204.11px;
+    top: 213px;
+    background: rgba(41, 190, 248, 0.2);
+    mix-blend-mode: normal;
+    filter: blur(300px);
+    transform: rotate(15deg);
+}
+.info_bg2 {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    left: 0px;
+    bottom: 0px; 
+    background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+    transform: rotate(180deg);
+}
+.info_bg3bg4_container {
+    position: absolute;
+    width: 100%;
+    bottom: 130px;
+    left: 0px;
+}
+.info_bg3 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: -60px;
+}
+.info_bg4 {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 /*  */
 @media screen and (max-width: 1439px) {
@@ -237,6 +283,16 @@
         height: 33px;
         line-height: 150%;
     }
+    /* DECORATION */
+    .info_bg1 {
+        width: 1107.26px;
+        height: 835.26px;
+        left: 529.18px;
+        top: 425px;
+    }
+    .info_bg2 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 999px) {
@@ -279,9 +335,15 @@
         left: auto;
     }
     /* DECORATION */
-    .Rectangle15 {
+    .info_bg {
         width: 935.61px;
         height: 571.18px;
+    }
+    .info_bg1 {
+        width: 1047.69px;
+        height: 790.32px;
+        left: 560.55px;
+        top: 187px;
     }
 }
 
@@ -339,8 +401,14 @@
         display: none;
     }
     /* DECORATION */
-    .Rectangle15 {
+    .info_bg {
         display: none;
+    }
+    .info_bg1 {
+        width: 908.28px;
+        height: 685.16px;
+        left: 121.33px;
+        top: 348px;
     }
 }
 
@@ -375,6 +443,13 @@
     .info_stats_list_item-content {
         font-size: 12px;
         line-height: 19px;
+    }
+    /* DECORATION */
+    .info_bg1 {
+        width: 908.28px;
+        height: 685.16px;
+        left: 121.33px;
+        top: 348px;
     }
 }
 

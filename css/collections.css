@@ -1,19 +1,14 @@
-/* DESCRIPTION ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.collections_container {
-    margin-top: 55px;
+.collections {
+    padding-bottom: 350px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* .vector39 {
-    position: absolute;
-    width: 3071.45px;
-    height: 2672.45px;
-    left: 1069.8px;
-    top: -808.67px;
-    background: linear-gradient(91.11deg, #00D1FF 25.79%, #FF54CF 75.27%);
-    mix-blend-mode: normal;
-    filter: blur(67px);
-    transform: matrix(0.98, 0.1, -0.18, 0.99, 0, 0);
-} */
+.collections_container {
+    margin-top: 31px;
+    position: relative;
+    z-index: 10;
+}
 
 .collections_title {
     font-family: 'Bakemono Stereo Trial 700';
@@ -33,17 +28,32 @@
 .collections_alpha_img {
     width: 560px;
     height: 560px;
+    z-index: 2;
+    position: relative;
 }
 
-.collections_alpha_content {
-    
+.collections_alpha_img_bg {
+    position: absolute;
+    width: 387.53px;
+    height: 247.17px;
+    background: linear-gradient(137.49deg, #00D1FF -2.94%, #FF54CF 100%);
+    filter: blur(100px);
+    z-index: 1;
+}
+.collections_soccer_img_bg {
+    position: absolute;
+    width: 387.53px;
+    height: 247.17px;
+    bottom: 0;   
+    right: 0;
+    background: linear-gradient(137.49deg, #00D1FF -2.94%, #FF54CF 100%);
+    filter: blur(100px);
 }
 
 .collections_alpha_content-title {
     font-family: 'Bakemono Stereo Trial 700';
-    font-size: 32px;
+    font-size: 36px;
     line-height: 78%;
-    text-transform: uppercase;
     margin-bottom: 37px;
     position: relative;
     top: 9px;
@@ -58,9 +68,8 @@
 
 .collections_soccer_content-title {
     font-family: 'Bakemono Stereo Trial 700';
-    font-size: 32px;
+    font-size: 36px;
     line-height: 78%;
-    text-transform: uppercase;
     margin-bottom: 37px;
     position: relative;
     top: 9px;
@@ -133,6 +142,24 @@
     color: #000000;
     padding: 17px 20px;
 }
+/* DECORATION */
+.collections_bg1bg2_container {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+.collections_bg2 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: -50px;
+}
+.collections_bg1 {
+    position: absolute;
+    width: 100%;
+    z-index: 2; 
+}
+
 
 @media screen and (max-width: 1439px) {
     .collections {
@@ -162,19 +189,27 @@
         width: 360px;
         height: 360px;
     }
+    .collections_alpha_img_bg {
+        width: 293px;
+        height: 187px;
+    }
+    .collections_soccer_img_bg {
+        width: 293px;
+        height: 187px;
+    }
     .collections_alpha_content-title {
-        font-size: 23px;
+        font-size: 28px;
         line-height: 21px;
     }
     .collections_alpha_content-title span {
-        font-size: 27px;
+        font-size: 28px;
     }
     .collections_soccer_content-title {
-        font-size: 23px;
+        font-size: 28px;
         line-height: 21px;
     }
     .collections_soccer_content-title span {
-        font-size: 27px;
+        font-size: 28px;
     }
     .collections_alpha_content-list li {
         font-size: 12px;
@@ -219,6 +254,18 @@
         width: 273px;
         height: 273px;
     }
+    .collections_alpha_img_bg {
+        width: 216px;
+        height: 138px;
+        top: 25%;
+        left: 8%;
+    }
+    .collections_soccer_img_bg {
+        width: 216px;
+        height: 138px;
+        bottom: 25%;
+        right: 8%;
+    }
     .collections_title {
         font-size: 32px;
         line-height: 76px;
@@ -229,13 +276,21 @@
     }
     .collections_alpha_content-title {
         margin-bottom: 27px;
+        font-size: 26px;
+    }
+    .collections_alpha_content-title span {
+        font-size: 26px;
     }
     .collections_soccer_content-title {
         margin-bottom: 27px;
+        font-size: 26px;
     }
     .collections_alpha_content-list li {
         font-size: 12px;
         line-height: 137%;
+    }
+    .collections_soccer_content-title {
+        font-size: 26px;
     }
     .collections_soccer_content-list li {
         font-size: 12px;
@@ -269,6 +324,14 @@
         width: 264px;
         height: 265px;
     }
+    .collections_alpha_img_bg {
+        width: 222px;
+        height: 142px;
+    }
+    .collections_soccer_img_bg {
+        width: 222px;
+        height: 142px;
+    }
     .collections_alpha {
         gap: 42px;
         flex-direction: column;
@@ -277,6 +340,10 @@
     .collections_alpha_content-title {
         margin-bottom: 34px;
         text-align: center;
+        font-size: 26px;
+    }
+    .collections_alpha_content-title span {
+        font-size: 26px;
     }
     .collections_alpha_content-list {
         gap: 24px;
@@ -294,7 +361,10 @@
     .collections_soccer_content-title {
         margin-bottom: 34px;
         text-align: center;
-        font-size: 18px;
+        font-size: 26px;
+    }
+    .collections_soccer_content-title span {
+        font-size: 26px;
     }
     .collections_soccer_content-list {
         gap: 25px;
