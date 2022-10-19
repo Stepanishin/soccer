@@ -1,5 +1,5 @@
 .rarity_container {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .rarity_title {
@@ -27,7 +27,14 @@
 }
 
 .statisticValue {
-  display: inline;
+    font-family: 'TT Norms Pro 700';
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    left: -37px;
 }
 
 .content {
@@ -55,8 +62,8 @@
 .groupsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
   justify-content: space-between;
+  margin-top: -16px;
 }
 
 .emptyContainer {
@@ -73,7 +80,7 @@
   min-height: 220px;
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 93px;
 }
 
 .tokens {
@@ -136,7 +143,7 @@
   height: 260px;
   background: #FFC700;
   border-radius: 14px;
-  margin-top: 70px;
+  margin-top: 150px;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
@@ -152,9 +159,15 @@
 
 .rarityCheckerTitleContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  border-right: 2px solid #1D093B;
+  align-items: flex-start;
 }
 
 .rarityCheckerContentContainer {
+  gap: 26px;
 }
 
 .rarityCheckerTitle {
@@ -166,28 +179,39 @@
 }
 
 .rarityCheckerSubtitle {
-  font-family: "TT_NORMS_Pro";
-  color: #000000;
-  font-size: 21px;
-  margin-top: 30px;
+  font-family: 'TT Norms Pro 400';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #1D093B;
+  max-width: 283px;
+  position: relative;
+  left: -27px;
 }
 
 .rarityCheckerTitleHalf {
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
 }
 
 .rarityCheckInputContainer {
   border: 2px solid black;
   color: black;
-  font-size: 32px;
-  font-family: "TT_NORMS_Pro_BOLD";
   background-color: #ffc700;
-  width: 50%;
   padding: 10px !important;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   border-radius: 4px;
+  width: 176px;
+  height: 56.43px;
+  font-family: 'TT Norms Pro 700';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+  color: #1D093B;
 }
 
 .rarityMark,
@@ -198,41 +222,56 @@
 .Common {
   padding: 6px 15px;
   background-color: #f9b400;
-  border-radius: 18px;
+  border-radius: 3.01323px;
   display: inline;
   margin-left: 10px;
   color: white;
+  font-family: 'TT Norms Pro 500';
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.0753307px;
+  text-transform: capitalize;
+  color: #1D093B;
+
 }
 
 .Common {
-  background-color: gray;
+  background: #A4A4A3;
 }
 
 .Uncommon {
-  background-color: green;
+  background: #38D993;
 }
 
 .Rare {
-  background-color: blue;
+  background: #34BFFF;
 }
 
 .Epic {
-  background-color: violet;
+  background: #A327E9;
 }
 
 .Legendary {
-  background-color: orange;
+  background: #FF913B;
 }
 
 .rarityCheckerInput {
   border: none;
-  color: black;
-  font-size: 32px;
-  width: 60%;
-  font-family: "TT_NORMS_Pro_BOLD";
+  width: 64%;
   outline: none;
   background-color: #ffc700;
   display: inline;
+  font-family: 'TT Norms Pro 700';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+  color: #1D093B;
+  position: relative;
+  top: -1px;
 }
 
 .inputPrevalue {
@@ -241,24 +280,30 @@
 }
 
 .rarityCheckerBtn {
-  width: 54%;
-  height: 40px;
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "TT_NORMS_Pro_BOLD";
-  font-size: 16px;
+  color: #FFC700;
+  font-family: 'TT Norms Pro 500';
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
+  background: #1D093B;
   border-radius: 4px;
-  margin: 20px auto 0px auto;
+  width: 177px;
+  height: 56px;
+}
+
+.rarityCheckerBtn:hover {
+  background: #FF913B;
+  border-radius: 4px;
+  color: #1D093B;
 }
 
 .rarityCheckerImg {
-  width: 28%;
-  border-radius: 12px;
+  width: 183px;
+  height: 185px;
+  border-radius: 14px;
 }
 
 .tokenInfoText {
@@ -267,49 +312,75 @@
   position: relative;
 }
 
+.tokenInfoTextTop {
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+}
+
+.tokenInfoTextBottom {
+  margin-top: 10px;
+}
+
 .tokenInfo {
   height: 74%;
   width: 66%;
 }
 
 .traitTitle {
-  font-family: "TT_NORMS_Pro";
-  font-size: 12px;
+  font-family: 'TT Norms Pro 400';
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
 }
 
 .traitValue {
-  background-color: #e9b700;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2px;
-  font-family: "TT_NORMS_Pro";
-  font-size: 11px;
-  padding: 9px 6px;
-  text-align: center;
+  border: 1px solid #1D093B;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    padding: 1px 11px;
+    color: #1D093B;
+    font-family: 'TT Norms Pro 500';
+    font-size: 10px;
+    width: max-content;
+    position: relative;
+    top: -5px;
+    min-width: 90px;
 }
 
 .tokenInfoText {
-  font-family: "TT_NORMS_Pro";
-  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
+.tokenInfoText_title {
+  font-family: 'TT Norms Pro 700';
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+
 .trait {
-  width: 22%;
-  margin-right: 3%;
-  margin-top: 8px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 87px;
 }
 
 .traits {
   display: flex;
   flex-wrap: wrap;
-}
-
-.emoji {
-  width: 20px;
-  display: inline;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 /* @media (max-device-width: 1070px) {
@@ -333,213 +404,315 @@
   }
 } */
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1439px) {
+  .rarity_container {
+    margin-top: -122px;
+  }
+  .rarity_title {
+    font-size: 42px;
+  }
+  .rarity_title span {
+    font-size: 42px;
+  }
   .groupsTokens {
     width: 100%;
   }
-
   .rarityChecker {
-    flex-direction: column;
+    height: 200px;
+  }
+  .rarityCheckerTitle {
+    font-size: 28px;
+  }
+  .rarityCheckerSubtitle {
+    font-size: 12px;
+  }
+  .rarityCheckInputContainer {
+    font-size: 27.384px;
+    width: 134px;
+    height: 40px;
+    padding: 3px !important;
+  }
+  .rarityCheckerInput {
+    font-size: 27.384px;
+  }
+  .rarityCheckerBtn {
+    font-size: 18px;  
+    width: 134px;
+    height: 40px;
+  }
+  .rarityCheckerImg {
+    width: 129px;
+    height: 131.37px;
+    border-radius: 14px;
+  }
+  .tokenInfoText_title {
+  font-size: 10px;
+  }
+  .statisticValue {
+    font-size: 10px;
+    left: -24px;
+  }
+  .traitTitle {
+    font-size:8px;
+  }
+  .traitValue {
+    font-size: 8px;
+    min-width: 65.83px;
+    border: 1px solid #1D093B;
+    border-radius: 4px;
+    padding: 0px;
+    height: 18px;
+  }
+  .traits {
+    gap: 0px;
+    min-width: 300px;
+    justify-content: flex-start;
+  }
+  .tokenInfoText {
+    margin-top: 0px;
+  }
+  .tokenInfo {
+    width: 66%;
     height: auto;
-  }
-
-  .rarityCheckerContentContainer {
-    width: 100%;
-  }
-
-  .rarityCheckerTitleContainer {
-    width: 70%;
-    margin: 20px auto 0px auto;
-  }
-
-  .rarityCheckerContentContainer {
-    margin-top: 30px;
-    padding-bottom: 20px;
   }
 }
 
-@media (max-device-width: 1170px) {
-  .groupsTokens {
-    width: 100%;
+@media screen and (max-width: 999px) {
+  .tokens {
+    gap: 24px;
   }
-
   .rarityChecker {
+    height: 280px;
+    justify-content: space-evenly;
+}
+  .rarityCheckerTitleHalf {
     flex-direction: column;
-    height: auto;
-  }
-
-  .rarityCheckerContentContainer {
-    width: 100%;
-  }
-
-  .rarityCheckerTitleContainer {
-    width: 70%;
-    margin: 20px auto 0px auto;
-  }
-
-  .rarityCheckerContentContainer {
-    margin-top: 30px;
-    padding-bottom: 20px;
-  }
-  /* .emptyContainer,
-  .groupsTokens {
-    width: 100%;
-  }
-
+    gap: 8px;
+}
   .rarityCheckerTitleHalf {
-    width: 80%;
-  }
+    flex-direction: column;
+    gap: 13px;
+}
+.rarityCheckerTitle {
+  font-size: 24px;
+  width: 187px;
+}
+.rarityCheckerBtn {
+  font-size: 16px;
+}
+.rarityCheckerSubtitle {
+  font-size: 12px;
+  left: 0px;
+  max-width: 213px;
+  line-height: 18px;
+}
+.rarityCheckerTitleContainer {
+  gap: 26px;
+  width: 35%;
+  position: relative;
+  left: -40px;
+}
+.rarityCheckerImg {
+  width: 165px;
+height: 168px;
+  border-radius: 14px;
+  position: relative;
+  top: -16px;
+}
+.rarityCheckerContentContainer {
+  position: relative;
+  left: -56px;
+  gap: 16px;
+}
+.traits {
+  gap: 0px;
+  min-width: 217px;
+  justify-content: flex-start;
+  position: relative;
+  right: -62px;
+  top: -10px;
+}
+.tokenInfoText_title_bottom {
+  position: relative;
+  top: 15px;
+}
+.tokenInfoText_title {
+  font-size: 9px;
+}
+.statisticValue {
+  font-size: 10px;
+  left: 5px;
+  margin-right: auto;
+}
+.tokenInfoText {
+  min-width: 220px;
+}
+}
 
+@media screen and (max-width: 767px) {
+  .rarity_title {
+    font-size: 34px;
+    text-align: center;
+}
+.rarity_title span {
+  font-size: 34px;
+}
+.groupTitle {
+  font-size: 20px;
+  text-align: center;
+}
   .token {
-    height: auto;
-  }
-
-  .groupsTokens {
-    height: auto;
-    padding: 40px 0px;
-  } */
+    width: 84.59px;
+    height: 108.25px;
+}
+.tokens {
+  gap: 14px;
+  margin-top: 30px;
+}
+.tokenPercent {
+  font-size: 12.5px;
+}
+.tokenName {
+  font-size: 9px;
+}
+.rarityChecker {
+  margin-top: 66px;
+  height: 432px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.rarityCheckerTitleContainer {
+  gap: 26px;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  border-right: none;
+  border-bottom: 1px solid #1D093B;
+  padding-bottom: 19px;
+  padding-top: 32px;
+  left: 0;
+}
+.rarityCheckInputContainer {
+  width: 158px;
+  height: 38px;
+  padding: 3px !important;
+}
+.rarityCheckerSubtitle {
+  max-width: 148px;
+  line-height: 16px;
+}
+.rarityCheckerTitle {
+  font-size: 26px;
+  width: 114px;
+}
+.rarityCheckerBtn {
+  width: 158px;
+  height: 38px;
+}
+.rarityCheckerImg {
+  width: 128px;
+  height: 125.36px;
+  border-radius: 10px;
+} 
+.rarityCheckerContentContainer {
+  position: relative;
+  left: 0px;
+  gap: 30px;
+  padding: 0 6px;
+  padding-top: 5px;
+}
+.tokenInfoText_title {
+  line-height: 16px;
+  max-width: 50px;
+}
+.rarityMark, .Legendary, .Epic, .Rare, .Uncommon, .Common {
+  font-size: 10px;
+    line-height: 18px;
+    position: relative;
+    top: 6px;
+}
+.statisticValue {
+  top: 16px;
+}
+.tokenInfoText {
+  min-width: 179px;
+}
+.tokenInfo {
+  position: relative;
+  top: 10px;
+}
+.traits {
+  right: 0px;
+  top: 12px;
+}
 }
 
-@media only screen and (max-width: 981px) {
-  .rarityCheckerTitleContainer {
-    width: 100%;
-  }
-
-  .token {
-    min-height: 140px;
-  }
+@media screen and (max-width: 479px) {
+  .rarity_title {
+    font-size: 32px;
+    line-height: 30px;
+    max-width: 204px;
+    margin: 0 auto;
 }
-@media (max-device-width: 981px) {
-  .rarityCheckerTitleContainer {
-    width: 100%;
+  .rarity_title_span_span {
+    display: none;
   }
-
-  .token {
-    min-height: 140px;
-  }
+  .groupsContainer {
+    margin-top: 0px;
 }
-@media only screen and (max-width: 790px) {
-  .tokenName {
-    height: 30px;
-  }
+.tokens {
+  gap: 19px;
+
 }
-@media (max-device-width: 790px) {
-  .tokenName {
-    height: 30px;
-  }
+.groupsTokens {
+  padding-top: 33px;
+}
+.rarityChecker {
+  height: 648px;
+}
+.rarityCheckerTitleContainer {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 41px;
+}
+.rarityCheckerTitle { 
+  width: 100%;
+  position: relative;
+  left: 30px;
+}
+.rarityCheckerTitleHalf {
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+  align-items: center;
+}
+.rarityCheckerSubtitle {
+  max-width: fit-content;
+  position: relative;
+  left: 16px;
+}
+.rarityCheckerContentContainer {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  gap: 0px;
+}
+.tokenInfo {
+  width: 100%;
+}
+.traits {
+  right: 0px;
+  top: -5px;
+  right: -98px;
+}
 }
 
-@media only screen and (max-width: 590px) {
-  .subtitle {
-    width: 100%;
+@media screen and (max-width: 319px) {
+  .rarity_container {
+    transform: scale(0.9);
   }
-
-  .token {
-    width: 22%;
-  }
-
-  .groupsTokens {
-    height: auto;
-    padding: 20px 0px;
-  }
-
-  .rarityCheckerTitleHalf {
-    width: 100%;
-  }
-
-  .rarityCheckInputContainer {
-    width: 94%;
-  }
-
-  .rarityCheckerBtn {
-    width: 93%;
-  }
-
-  .rarityCheckerTitleContainer {
-    display: block;
-  }
-
-  .rarityCheckerSubtitle {
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .rarityCheckerImg {
-    width: 100%;
-  }
-
-  .rarityCheckerContentContainer {
-    display: block;
-  }
-
-  .tokenInfo {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  /* .tokenPercent {
-    margin-top: 1px;
-  } */
-
-  /* .token {
-    justify-content: flex-start;
-  } */
+  .tokens {
+    gap: 15px;
+    justify-content: center;
 }
-@media (max-device-width: 590px) {
-  .subtitle {
-    width: 100%;
-  }
-
-  .token {
-    width: 22%;
-  }
-
-  .groupsTokens {
-    height: auto;
-    padding: 20px 0px;
-  }
-
-  .rarityCheckerTitleHalf {
-    width: 100%;
-  }
-
-  .rarityCheckInputContainer {
-    width: 94%;
-  }
-
-  .rarityCheckerBtn {
-    width: 93%;
-  }
-
-  .rarityCheckerTitleContainer {
-    display: block;
-  }
-
-  .rarityCheckerSubtitle {
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .rarityCheckerImg {
-    width: 100%;
-  }
-
-  .rarityCheckerContentContainer {
-    display: block;
-  }
-
-  .tokenInfo {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  /* .tokenPercent {
-    margin-top: 1px;
-  } */
-
-  /* .token {
-    justify-content: flex-start;
-  } */
 }
