@@ -11,11 +11,6 @@
 }
 
 .collections_title {
-    font-family: 'Bakemono Stereo Trial 700';
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 159%;
-    color: #FFC700;
     margin-bottom: 63px;
 }
 
@@ -170,8 +165,6 @@
         margin-top: 234px;
     }
     .collections_title {
-        font-size: 42px;
-        line-height: 76px;
         margin-bottom: 48px;
     }
     .collections_alpha {
@@ -271,8 +264,6 @@
         right: 8%;
     }
     .collections_title {
-        font-size: 32px;
-        line-height: 76px;
         text-align: center;
     }
     .collections_alpha {
@@ -393,14 +384,11 @@
     .collections {
         margin-top: 882px;
     }
-    .collections_title {
-        font-size: 27px;
-    }
     .collections_alpha_content-list {
         gap: 24px;
         position: relative;
         left: 13px;
-        max-width: 254px;
+        max-width: 279px;
         padding-right: 0px;
     }
     .collections_soccer {
@@ -410,9 +398,9 @@
         font-size: 21px;
     }
     .collections_soccer_content-list {
-        max-width: 263px;
+        max-width: 287px;
         padding-right: 0px;
-        left: 0px;
+        left: 15px;
     }
     .collections_soccer_content {
         left: 0px;
@@ -420,13 +408,42 @@
     .collections_soccer_content-title {
         max-width: 250px;
     }
-    .collections_soccer_content-list {
-        left: 15px;
-    }
 }
 
 @media screen and (max-width: 319px) {
-    .collections_container {
-        transform: scale(0.9);
+    .collections {
+        margin-top: 270vw;
+    }
+    .collections_alpha_img {
+        width: 82vw;
+        height: 82vw;
+    }
+    .collections_alpha_content-title {
+        margin-bottom: 10vw;
+        font-size: 8vw;
+    }
+    .collections_alpha_content-list li {
+        font-size: 3.7vw;
+    }
+    .collections_alpha_content-list {
+        gap: 7.5vw;
+        left: 4vw;
+        max-width: 84vw;
+    }
+    .collections_soccer_content-title {
+        max-width: 75vw;
+        font-size: 8vw;
+    }
+    .collections_soccer_content-list {
+        max-width: 82vw;
+        left: 4vw;
+        gap: 7.5vw;
+    }
+    .collections_link {
+        font-size: 5vw;
+        line-height: 7vw;
+        margin: 23vw auto 0 auto;
+        padding: 2.8vw 1.8vw;
+        width: 59vw;
     }
 }

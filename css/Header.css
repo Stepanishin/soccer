@@ -167,9 +167,19 @@
     padding: 40px 20px 0px 20px;
 }
 
-.header_social_list_mobile .header_social_list_item-twitter {
+.header_social_list_item-twitter {
     height: 30.24px;
     width: 37.2px;
+}
+
+.header_social_list_item-me {
+    width: 43px;
+    height: 30px;
+}
+
+.header_social_list_item-tg {
+    width: 40px;
+    height: 33px;
 }
 
   /* *Hamburger**/
@@ -320,13 +330,41 @@
 
 @media screen and (max-width: 319px) {
     .Header_nav_mobile_wrapper {
-        width: 84vw;
+        width: 90vw;
     }
     .Header_nav_mobile_List a {
         font-size: 7vw;
     }
     .header_social_list_mobile {
-        transform: scale(0.8);
-        padding: 20px 0px 0px 0px;
+        gap: 17vw;
+        position: relative;
+        bottom: 9vw;
+        border-top: 1px solid #FFF73C;
+        padding: 12vw 6vw 0px 6vw;
+    }
+    .header_social_list_item-twitter {
+        height: 9vw;
+        width: 11.5vw;
+    }
+    .header_social_list_item-me {
+        width: 13vw;
+        height: 9vw;
+    }
+    .header_social_list_item-tg {
+        width: 12.5vw;
+        height: 10vw;
+    }
+    .header_social_list_item-twitter::after {
+        top: 2.8vw;
+        left: 11vw;
+    }
+    .header_social_list_item-me::after {
+        top: 2.8vw;
+        left: 16.5vw;
+    }
+    
+    .header_social_list_item-tg::after {
+        top: 2.8vw;
+        left: 14vw;
     }
 }

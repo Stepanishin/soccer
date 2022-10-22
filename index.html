@@ -56,7 +56,7 @@
             <!-- mobile -->
             <div class='Header_Hamburger_container'>
               <input id="toggle" type="checkbox"></input>
-              <label for="toggle" class="hamburger">
+              <label for="toggle" class="hamburger" onclick=toggleOverflow()>
                   <div class="top-bun"></div>
                   <div class="meat"></div>
                   <div class="bottom-bun"></div>  
@@ -74,17 +74,17 @@
                       </ul>
                       <div class="header_social_list_mobile" >
                         <a class="header_social_list_item header_social_list_item-twitter" href="#">
-                          <svg width="38" height="31" viewBox="0 0 38 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg viewBox="0 0 38 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6847 30.6328C25.7212 30.6328 33.4019 18.994 33.4019 8.91791C33.4019 8.59048 33.4019 8.26305 33.387 7.93561C34.8755 6.86401 36.1705 5.50962 37.1976 3.97663C35.8281 4.58685 34.3545 4.9887 32.8065 5.18219C34.3843 4.24453 35.59 2.74131 36.1705 0.955308C34.6969 1.83343 33.0595 2.45853 31.318 2.80085C29.9188 1.31251 27.9391 0.38974 25.751 0.38974C21.5386 0.38974 18.115 3.81292 18.115 8.02491C18.115 8.62025 18.1894 9.2007 18.3085 9.76627C11.9675 9.45372 6.341 6.40262 2.5751 1.78878C1.92016 2.91991 1.54804 4.22965 1.54804 5.62869C1.54804 8.27793 2.90257 10.6146 4.94181 11.9839C3.69147 11.9392 2.51556 11.5969 1.4885 11.0314C1.4885 11.0611 1.4885 11.0909 1.4885 11.1355C1.4885 14.8266 4.12314 17.9224 7.60622 18.6219C6.96617 18.8005 6.29634 18.8898 5.59675 18.8898C5.10555 18.8898 4.62923 18.8451 4.16779 18.7558C5.13532 21.792 7.96346 23.9948 11.2977 24.0543C8.67794 26.1082 5.38836 27.3287 1.81597 27.3287C1.20568 27.3287 0.595399 27.2989 0 27.2245C3.364 29.3677 7.38295 30.6328 11.6847 30.6328Z" fill="white"/>
                           </svg>                            
                         </a>
                         <a class="header_social_list_item header_social_list_item-me" href="#">
-                          <svg width="44" height="32" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M37.0576 3.42339C34.3024 2.25429 31.3303 1.40771 28.228 0.92395C28.1629 0.92395 28.1195 0.944107 28.0762 0.98442C27.6857 1.60928 27.2735 2.41555 26.9697 3.04041C23.6288 2.5768 20.3096 2.5768 17.0555 3.04041C16.7734 2.39539 16.3396 1.60928 15.9491 0.98442C15.9274 0.944107 15.8623 0.92395 15.8189 0.92395C12.7166 1.40771 9.74451 2.27445 6.98934 3.42339C6.96765 3.42339 6.94596 3.44354 6.92426 3.4637C1.30545 11.1434 -0.234838 18.6417 0.52446 26.0392C0.52446 26.0796 0.546155 26.1199 0.589543 26.14C4.27756 28.6395 7.87881 30.1512 11.3933 31.1591C11.4584 31.1792 11.5017 31.1591 11.5451 31.1187C12.3695 30.0706 13.1288 28.9821 13.7579 27.813C13.8013 27.7526 13.7579 27.6719 13.6929 27.6316C12.5214 27.2285 11.3933 26.7246 10.3086 26.1602C10.2218 26.1199 10.2218 25.9989 10.2869 25.9586C10.5038 25.7974 10.7424 25.6361 10.9594 25.4749C11.0028 25.4547 11.0462 25.4345 11.0896 25.4547C18.1836 28.4177 25.885 28.4177 32.8923 25.4547C32.9357 25.4345 33.0007 25.4345 33.0441 25.4749C33.2611 25.6361 33.478 25.7974 33.7167 25.9586C33.8034 26.0191 33.7817 26.1199 33.695 26.1602C32.6102 26.7447 31.4821 27.2285 30.3107 27.6316C30.2239 27.6518 30.2022 27.7324 30.2456 27.813C30.8964 28.962 31.634 30.0706 32.4584 31.0986C32.5018 31.1389 32.5452 31.1591 32.6102 31.1389C36.1464 30.1311 39.7477 28.6193 43.4574 26.14C43.4791 26.1199 43.5008 26.0796 43.5225 26.0392C44.4336 17.4726 42.0039 10.055 37.101 3.4637C37.101 3.4637 37.0793 3.44354 37.0576 3.42339ZM14.821 21.5443C12.6732 21.5443 10.916 19.7503 10.916 17.5533C10.916 15.3562 12.6515 13.5622 14.821 13.5622C17.0121 13.5622 18.7476 15.3763 18.7259 17.5533C18.7259 19.7503 16.9904 21.5443 14.821 21.5443ZM29.2476 21.5443C27.0999 21.5443 25.3427 19.7503 25.3427 17.5533C25.3427 15.3562 27.0782 13.5622 29.2476 13.5622C31.4388 13.5622 33.1743 15.3763 33.1526 17.5533C33.1526 19.7503 31.4388 21.5443 29.2476 21.5443Z" fill="white"/>
                           </svg>              
                         </a>
                         <a class="header_social_list_item header_social_list_item-tg" href="#">
-                          <svg width="40" height="34" viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg viewBox="0 0 40 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.80208 14.216C13.4996 9.55575 20.633 6.48343 24.2022 4.99904C34.3929 0.760797 36.5105 0.0245699 37.8907 0.000259206C38.1943 -0.00508766 38.873 0.0701355 39.3127 0.42685C39.6839 0.728052 39.786 1.13493 39.8349 1.42051C39.8838 1.70608 39.9447 2.35662 39.8963 2.86494C39.344 8.66677 36.9545 22.7463 35.7388 29.2444C35.2244 31.994 34.2116 32.916 33.231 33.0062C31.1 33.2023 29.4819 31.598 27.4179 30.2452C24.1882 28.1283 22.3636 26.8106 19.2287 24.7449C15.6056 22.3576 17.9543 21.0456 20.019 18.9013C20.5594 18.3401 29.9486 9.80083 30.1303 9.02619C30.153 8.92931 30.1741 8.56817 29.9595 8.37748C29.745 8.18679 29.4283 8.252 29.1998 8.30386C28.8758 8.37737 23.7164 11.7872 13.7213 18.5334C12.2568 19.539 10.9303 20.0289 9.74183 20.0032C8.4316 19.9749 5.91126 19.2625 4.03764 18.6535C1.73957 17.9066 -0.0868892 17.5117 0.0721544 16.2432C0.154994 15.5824 1.06497 14.9067 2.80208 14.216Z" fill="white"/>
                           </svg>                            
                         </a>                                
@@ -299,79 +299,105 @@
                 <h2 class="title roadmap_title" >roadmap</h2>
                 <div class="roadmap_content_container">
                     <img class="roadmap_content_img" src="./img/roadmap/RoadMap.png" alt="">
-                    <div class="roadmap_content_start">
+                    <div class="roadmap_content_start roadmap_content_wrapper" >
+                      <p class="roadap_content_title roadap_content_title_start" >Project start</p>
+                      <p class="roadap_content_data">December 2021</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_start">
                         The final vision of the project concept, Twitter registration, team creation, site development, and search for artists.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap1">
+                    <div class="roadmap_content_i_wrap1 roadmap_content_wrapper">
+                      <p class="roadap_content_title" >Social Networks Launch</p>
+                      <p class="roadap_content_data">January 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_1">
                         Building a strong community by launching social activity in Discord, Twitter and Telegram.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap2">
+                    <div class="roadmap_content_i_wrap2 roadmap_content_wrapper">
+                      <p class="roadap_content_title" >NFT Development</p>
+                      <p class="roadap_content_data">January — February 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_2">
                         Selection of the best artists, active development of the arts, and preparation for the first Lazy Alpha collection mint.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap3">
+                    <div class="roadmap_content_i_wrap3 roadmap_content_wrapper">
+                      <p class="roadap_content_title" >Pause Caused by the War</p>
+                      <p class="roadap_content_data">February — April 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_3">
                         The Lazy Soccer project team, which includes citizens of Ukraine, Russia and Belarus, categorically condemns the war of Russia against Ukraine. Since some members of the team and their families, as well as most of the "early adopters" of the project, were affected by the war to one degree or another, the start of the development of the project was postponed to a later date.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap4">
+                    <div class="roadmap_content_i_wrap4 roadmap_content_wrapper">
+                      <p class="roadap_content_title" >Alpha Chat Development</p>
+                      <p class="roadap_content_data">May 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_4">
                         1000 Lazy Alpha pixel sloths for the price of 0.69 SOL are distributed to their new owners. The first collection (alpha / DAO) is a 100% WhiteList project. We will provide a pre-mint of 50 NFTs for marketing purposes, as well as give out whitelist spots to the most active members of the community and members of the largest DAOs in the Solana ecosystem.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap5">
+                    <div class="roadmap_content_i_wrap5 roadmap_content_wrapper">
+                      <p class="roadap_content_title roadap_content_title_3string" >DAO Launch & Alpha Chat for Holders</p>
+                      <p class="roadap_content_data">May 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_5">
                         To access the DAO and alpha chat, you need to hold two Lazy Alpha NFTs on the same wallet.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap6">
+                    <div class="roadmap_content_i_wrap6 roadmap_content_wrapper">
+                      <p class="roadap_content_title" >Alpha Collection Mint</p>
+                      <p class="roadap_content_data">May 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_6">
                         After the listing, we start the work right away to ensure that the holders of the Lazy Alpha collection get the opportunity to participate in the best and most exciting projects of the Solana ecosystem at an early stage. First of all, we plan to build a team of NFT analysts in order not to miss all the hottest trends in the market.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap7">
+                    <div class="roadmap_content_i_wrap7 roadmap_content_wrapper">
+                      <p class="roadap_content_title" >NFT Snapshots</p>
+                      <p class="roadap_content_data">Q3 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_7">
                         We will periodically take random snapshots of our Lazy Alpha NFT holders' wallets. In the future, all wallets that hold at least two Lazy Alpha NFTs during each of the snapshots will receive a free airdrop of the Lazy Soccer Manager NFT and possibly a certain number of Lazy Soccer project tokens which will allow you to test the starting functionality of the game.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap8">
+                    <div class="roadmap_content_i_wrap8 roadmap_content_wrapper">
+                      <p class="roadap_content_title roadmap_current_event " >Whitepaper Release</p>
+                      <p class="roadap_content_data roadmap_current_event ">Q3 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_8">
                         ?????
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap9">
+                    <div class="roadmap_content_i_wrap9 roadmap_content_wrapper">
+                      <p class="roadap_content_title roadap_content_title_future roadap_content_title_3string" >Start of the Ambassador Program</p>
+                      <p class="roadap_content_data">Q3-Q4 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_9">
                         ?????
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap10">
+                    <div class="roadmap_content_i_wrap10 roadmap_content_wrapper">
+                      <p class="roadap_content_title roadap_content_title_future" >Futher Project Development</p>
+                      <p class="roadap_content_data">Non-Stop</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_10">
                         Before the Lazy Soccer public IDO, we will launch the second NFT collection of the project — Lazy Soccer Manager Genesis, which will be required to access the game. In addition to the free airdrop for the most loyal holders following the snapshot results, all other holders of the Lazy Alpha collection will receive guaranteed spots on the whitelist to participate in the mint of the Lazy Soccer Manager Genesis NFTs.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap11">
+                    <div class="roadmap_content_i_wrap11 roadmap_content_wrapper">
+                      <p class="roadap_content_title roadap_content_title_future" >TGE & Token Listing</p>
+                      <p class="roadap_content_data">Q3-Q4 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_11">
                         We are planning a token sale where holders of Lazy Alpha and Lazy Soccer Manager Genesis NFTs will be able to receive allocations.
                       </div>
                     </div>
-                    <div class="roadmap_content_i_wrap12">
+                    <div class="roadmap_content_i_wrap12 roadmap_content_wrapper">
+                      <p class="roadap_content_title roadap_content_title_future roadap_content_title_3string" >Second NFT Collection Development </p>
+                      <p class="roadap_content_data">Q3-Q4 2022</p>
                       <img class="roadmap_content_i" src="./img/roadmap/i.svg" alt="">
                       <div class="roadmap_content_i_description roadmap_content_i_description_12">
                         Lazy Soccer is a huge project that our team will continue to grow and develop for many years. We plan to build a large ecosystem around it and integrate it with other NFT collections and blockchain projects.
@@ -380,7 +406,86 @@
 
                 </div>
                 <div class="roadmap_content_container_mobile">
-                  <img class="roadmap_content_img_mobile" src="./img/roadmap/RoadMapMobile.png" alt="">
+                  <img class="roadmap_content_img_mobile" src="./img/roadmap/RoadMapMobile.svg" alt="">
+                  <div class="roadmap_mobile_wrapper">
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >Project start</p>
+                      <p class="roadmap_mobile_content_data" >December 2021</p>
+                      <p class="roadmap_mobile_content_description" >The final vision of the project concept, Twitter registration, team creation, site development, and search for artists.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >Social Networks Launch</p>
+                      <p class="roadmap_mobile_content_data" >January 2022</p>
+                      <p class="roadmap_mobile_content_description" >Building a strong community by launching social activity in Discord, Twitter and Telegram.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >NFT Development</p>
+                      <p class="roadmap_mobile_content_data" >January – February 2022</p>
+                      <p class="roadmap_mobile_content_description" >Selection of the best artists, active development of the arts, and preparation for the first Lazy Alpha collection mint.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >Pause Caused by the War</p>
+                      <p class="roadmap_mobile_content_data" >February — April 2022</p>
+                      <p class="roadmap_mobile_content_description" >The Lazy Soccer project team, which includes citizens of Ukraine, Russia and Belarus, categorically condemns the war of Russia against Ukraine. Since some members of the team and their families, as well as most of the "early adopters" of the project, were affected by the war to one degree or another, the start of the development of the project was postponed to a later date.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >Alpha Collection Mint</p>
+                      <p class="roadmap_mobile_content_data" >May 2022</p>
+                      <p class="roadmap_mobile_content_description" >1000 Lazy Alpha pixel sloths for the price of 0.69 SOL are distributed to their new owners. The first collection (alpha / DAO) is a 100% WhiteList project. We will provide a pre-mint of 50 NFTs for marketing purposes, as well as give out whitelist spots to the most active members of the community and members of the largest DAOs in the Solana ecosystem.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >DAO Launch & Alpha Chat for Holders</p>
+                      <p class="roadmap_mobile_content_data" >May 2022</p>
+                      <p class="roadmap_mobile_content_description" >To access the DAO and alpha chat, you need to hold two Lazy Alpha NFTs on the same wallet.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >Alpha Chat Development</p>
+                      <p class="roadmap_mobile_content_data" >May 2022</p>
+                      <p class="roadmap_mobile_content_description" >After the listing, we start the work right away to ensure that the holders of the Lazy Alpha collection get the opportunity to participate in the best and most exciting projects of the Solana ecosystem at an early stage. First of all, we plan to build a team of NFT analysts in order not to miss all the hottest trends in the market.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >NFT Snapshots</p>
+                      <p class="roadmap_mobile_content_data" >Q3 2022</p>
+                      <p class="roadmap_mobile_content_description" >We will periodically take random snapshots of our Lazy Alpha NFT holders' wallets. In the future, all wallets that hold at least two Lazy Alpha NFTs during each of the snapshots will receive a free airdrop of the Lazy Soccer Manager NFT and possibly a certain number of Lazy Soccer project tokens which will allow you to test the starting functionality of the game.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title" >Whitepaper Release</p>
+                      <p class="roadmap_mobile_content_data" >Q3 2022</p>
+                      <p class="roadmap_mobile_content_description" >?????</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title roadmap_mobile_content_title_future" >Start of the Ambassador Program</p>
+                      <p class="roadmap_mobile_content_data" >Q3—Q4 2022</p>
+                      <p class="roadmap_mobile_content_description" >???</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title roadmap_mobile_content_title_future" >Second NFT Collection Development</p>
+                      <p class="roadmap_mobile_content_data" >Q3—Q4 2022</p>
+                      <p class="roadmap_mobile_content_description" >Before the Lazy Soccer public IDO, we will launch the second NFT collection of the project — Lazy Soccer Manager Genesis, which will be required to access the game. In addition to the free airdrop for the most loyal holders following the snapshot results, all other holders of the Lazy Alpha collection will receive guaranteed spots on the whitelist to participate in the mint of the Lazy Soccer Manager Genesis NFTs.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title roadmap_mobile_content_title_future" >TGE & Token Listing</p>
+                      <p class="roadmap_mobile_content_data" >Q3—Q4 2022</p>
+                      <p class="roadmap_mobile_content_description" >We are planning a token sale where holders of Lazy Alpha and Lazy Soccer Manager Genesis NFTs will be able to receive allocations.</p>
+                    </div>
+
+                    <div class="roadmap_mobile_content_container" >
+                      <p class="roadmap_mobile_content_title roadmap_mobile_content_title_future" >Futher Project Development</p>
+                      <p class="roadmap_mobile_content_data" >Non-stop</p>
+                      <p class="roadmap_mobile_content_description" >Lazy Soccer is a huge project that our team will continue to grow and develop for many years. We plan to build a large ecosystem around it and integrate it with other NFT collections and blockchain projects.</p>
+                    </div>
+                  </div>
                 </div>
             </div>
         </section>
@@ -507,7 +612,7 @@
 
     </main>
 
-    <!-- Header -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer_container">
           <div class="footer_social_list" >

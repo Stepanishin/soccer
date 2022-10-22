@@ -29,9 +29,15 @@
     src:url('../fonts/TT\ Norms\ Pro\ Medium.otf');
 }
 
-@font-face {
+/* @font-face {
     font-family: "TT Norms Pro 700";
     src: url("../fonts/TT\ Norms\ Pro\ Bold.otf");
+    font-weight: 700;
+} */
+
+@font-face {
+    font-family: "TT Norms Pro 700";
+    src: url("../fonts/TT\ Norms\ Pro\ Medium.otf");
     font-weight: 700;
 }
 
@@ -68,11 +74,15 @@ main {
 }
 
 .title {
-    font-family: 'Bakemono Stereo Trial 700';
+    font-family: 'Bakemono Stereo Trial 800';
     font-size: 48px;
     line-height: 159%;
     text-transform: uppercase;
     color: #FFC700;
+}
+
+.ovh {
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1439px) {
