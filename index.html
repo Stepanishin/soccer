@@ -740,6 +740,14 @@
           checkBtn.addEventListener("click", () => {
             searchToken();
           });
+
+          let checkInputBtn = document.getElementById("rarityCheckerInput"); 
+
+          checkInputBtn.addEventListener("keydown", (e) => {
+            if (e.keyCode === 13) {
+                searchToken();
+              }
+          });
     
           async function GetAllDataOnce() {
             const querySnapshot = await getDocs(collection(db, "groups"));
