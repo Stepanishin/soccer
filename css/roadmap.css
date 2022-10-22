@@ -64,7 +64,6 @@
     position: absolute;
     top: 396px;
     left: 198px;
-    /* gap: 245px; */
     max-width: 851px;
 }
 
@@ -194,6 +193,11 @@
 
 .roadmap_content_container_mobile {
     display: none;
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+.roadmap_content_container_mobile::-webkit-scrollbar {
+    width: 0;
 }
 
 @media screen and (max-width: 1439px) {

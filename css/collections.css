@@ -142,6 +142,10 @@
     color: #000000;
     padding: 17px 20px;
 }
+
+.collections_link:hover {
+    background: #FF913B;
+}
 /* DECORATION */
 .collections_bg1bg2_container {
     position: absolute;
