@@ -40,6 +40,7 @@
     height: 560px;
     z-index: 2;
     position: relative;
+    border-radius: 3vw;
 }
 
 .collections_alpha_img_bg {
@@ -179,6 +180,11 @@
     height: 2200px;
     transform: scaleX(2);
 }
+.collections_border {
+    height: 2px;
+    background-color:rgba(255, 255, 255, 0.2);
+    margin-top: 80px;
+}
 
 
 @media screen and (max-width: 1439px) {
@@ -254,7 +260,7 @@
     .collections_soccer_content {
         max-width: 441px;
         position: relative;
-        left: -32px;
+        left: -59px;
     }
     .collections_link {
         font-size: 28.9648px;
@@ -323,7 +329,7 @@
     .collections_soccer_content {
         max-width: 360px;
         position: relative;
-        left: -4px;
+        left: 27px;
         padding-left: 0px;
     }
     .collections_link {
@@ -333,6 +339,9 @@
         padding: 14px 6px;
         width: 205px;
         text-align: center;
+    }
+    .collections_border {
+        margin-top: 40px;
     }
 }
 
