@@ -1,3 +1,8 @@
+.marketplaces {
+    position: relative;
+    z-index: 2;
+}
+
 .marketplaces_container {
     margin-top: 469px;
 }

@@ -1,5 +1,27 @@
+.rarity {
+  position: relative;
+  z-index: 2;
+}
+
+.rarity_bg {
+  position: absolute;
+  width: 100%;
+  /* transform: rotate(180deg); */
+  z-index: 1;
+  bottom: 0;
+}
+.rarity_bg img {
+  position: absolute;
+}
+.rarity_bg_gd {
+  top: -20px;
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
 .rarity_container {
   margin-top: 30px;
+  z-index: 3;
 }
 
 .rarity_title {
@@ -383,27 +405,6 @@
   gap: 10px;
 }
 
-/* @media (max-device-width: 1070px) {
-  .rarityChecker {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .rarityCheckerContentContainer {
-    width: 100%;
-  }
-
-  .rarityCheckerTitleContainer {
-    width: 70%;
-    margin: 20px auto 0px auto;
-  }
-
-  .rarityCheckerContentContainer {
-    margin-top: 30px;
-    padding-bottom: 20px;
-  }
-} */
-
 @media only screen and (max-width: 1439px) {
   .rarity_container {
     margin-top: -122px;
@@ -475,6 +476,9 @@
     width: 66%;
     height: auto;
   }
+  .rarity_bg {
+    bottom: -93px;
+}
 }
 
 @media screen and (max-width: 999px) {
@@ -705,6 +709,14 @@ height: 168px;
   top: -5px;
   right: -98px;
   max-width: 200px;
+}
+.rarity_bg {
+  bottom: -135px;
+}
+.rarity_bg_gd {
+  top: -9px;
+  filter: blur(3px);
+  opacity: 0.3;
 }
 }
 

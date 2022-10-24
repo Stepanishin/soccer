@@ -1,7 +1,22 @@
 .collections {
     padding-bottom: 350px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+.collection_bg {
+    position: absolute;
+    width: 100%;
+    transform: rotate(180deg);
+    z-index: 1;
+    bottom: 0;
+}
+.collection_bg img {
+    position: absolute;
+}
+.collection_bg_gd {
+    top: -20px;
+    filter: blur(8px);
+    opacity: 0.3;
 }
 
 .collections_container {
@@ -145,18 +160,24 @@
 .collections_bg1bg2_container {
     position: absolute;
     width: 100%;
-    top: 100px;
+    top: -1000px;
 }
 .collections_bg2 {
     position: absolute;
     width: 100%;
-    z-index: 1;
-    top: -50px;
+    z-index: 2;
+    height: 197vw;
+    height: 2800px;
+    transform: scaleX(2);
 }
 .collections_bg1 {
     position: absolute;
     width: 100%;
-    z-index: 2; 
+    z-index: 1;
+    top: 722px;
+    height: 153vw;
+    height: 2200px;
+    transform: scaleX(2);
 }
 
 
@@ -240,6 +261,9 @@
         line-height: 36px;
         margin:140px auto 0 auto;
         padding: 14px 20px;
+    }
+    .collection_bg {
+        bottom: 134px;
     }
 }
 
@@ -378,6 +402,9 @@
         width: 184px;
         text-align: center;
     }
+    .collection_bg {
+        bottom: 188px;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -407,6 +434,14 @@
     }
     .collections_soccer_content-title {
         max-width: 250px;
+    }
+    .collection_bg {
+        bottom: 205px;
+    }
+    .collection_bg_gd {
+        top: -8px;
+        filter: blur(3px);
+        opacity: 0.3;
     }
 }
 

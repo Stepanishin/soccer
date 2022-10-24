@@ -1,6 +1,28 @@
+.FAQ {
+    position: relative;
+}
+
 .FAQ_container {
     margin-top: 350px;
+    position: relative;
+    z-index: 2;
 }
+
+.FAQ_bg {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: -312px;
+    transform: rotateY(180deg);
+  }
+  .FAQ img {
+    position: absolute;
+  }
+  .FAQ_bg_gd {
+    top: -20px;
+    filter: blur(8px);
+    opacity: 0.3;
+  }
 
 .FAQ_title {
     margin-bottom: 70px;
@@ -134,6 +156,9 @@
         border-radius: 6px;
         padding: 15px 37px;
     }
+    .FAQ_bg {
+        top: -229px;
+    }
 }
 
 @media screen and (max-width: 999px) {
@@ -175,6 +200,9 @@
         margin-top: 70px;
         border-radius: 5px;
         padding: 16px 38px;
+    }
+    .FAQ_bg {
+        top: -190px;
     }
 }
 
@@ -261,6 +289,14 @@
         margin-top: 40px;
         border-radius: 4px;
         padding: 12px 35px;
+    }
+    .FAQ_bg {
+        top: -100px;
+    }
+    .FAQ_bg_gd {
+        top: -9px;
+        filter: blur(3px);
+        opacity: 0.3;
     }
 }
 
