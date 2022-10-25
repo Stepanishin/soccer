@@ -132,10 +132,9 @@
   width: 94.88px;
   height: 121.41px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.61);
+  border-radius: 6px;
+  /* border: 1px solid rgba(255, 255, 255, 0.61); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +149,15 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 5px;
+  background-image: radial-gradient(circle at 100% 100%, transparent 4px, rgba(255, 255, 255, 0.61) 4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.61)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(rgba(255, 255, 255, 0.61))), radial-gradient(circle at 100% 0%, transparent 4px, rgba(255, 255, 255, 0.61) 4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.61)), to(rgba(255, 255, 255, 0.61)));
+background-image: -o-radial-gradient(100% 100%, circle, transparent 4px, rgba(255, 255, 255, 0.61) 4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px), -o-linear-gradient(left, rgba(255, 255, 255, 0.61), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 100%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 0%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(right, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.61)), -o-radial-gradient(100% 0%, circle, transparent 4px, rgba(255, 255, 255, 0.61) 4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px), -o-linear-gradient(bottom, rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.61));
+background-image: radial-gradient(circle at 100% 100%, transparent 4px, rgba(255, 255, 255, 0.61) 4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px), linear-gradient(to right, rgba(255, 255, 255, 0.61), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to left, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.61)), radial-gradient(circle at 100% 0%, transparent 4px, rgba(255, 255, 255, 0.61) 4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px), linear-gradient(to top, rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.61));
+background-size: 5px 5px, calc(100% - 10px) 1px, 5px 5px, 1px calc(100% - 10px);
+background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+background-repeat: no-repeat;
 }
+
+
 
 .groupTitle {
   font-family: 'TT Norms Pro 700';

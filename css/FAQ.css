@@ -61,9 +61,14 @@
     -o-transition: color 0.1s;
     transition: color 0.1s;
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
-    border: 1px solid #ffffff;
+    border-radius: 17px;
     padding: 21px 50px 28px 50px;
+    background-image: radial-gradient(circle at 100% 100%, transparent 16px, rgba(255, 255, 255, 0.7) 16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 100%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 0%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(rgba(255, 255, 255, 0.7))), radial-gradient(circle at 100% 0%, transparent 16px, rgba(255, 255, 255, 0.7) 16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+    background-image: -o-radial-gradient(100% 100%, circle, transparent 16px, rgba(255, 255, 255, 0.7) 16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px), -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 100%, circle, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 0%, circle, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -o-linear-gradient(right, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.7)), -o-radial-gradient(100% 0%, circle, transparent 16px, rgba(255, 255, 255, 0.7) 16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px), -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-image: radial-gradient(circle at 100% 100%, transparent 16px, rgba(255, 255, 255, 0.7) 16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px), linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 100%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 0%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), linear-gradient(to left, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.7)), radial-gradient(circle at 100% 0%, transparent 16px, rgba(255, 255, 255, 0.7) 16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px), linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    background-size: 17px 17px, calc(100% - 34px) 1px, 17px 17px, 1px calc(100% - 34px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
 }
 
  
@@ -93,8 +98,13 @@
     color: #FFC700;
   }
   .qna.active .question {
-    border: 1px solid #FFC700;
     color: #FFC700;
+    background-image: radial-gradient(circle at 100% 100%, transparent 16px, rgba(100%, 78%, 0%, 0.7) 16px, rgba(100%, 78%, 0%, 0.7) 17px, transparent 17px), -webkit-gradient(linear, left top, right top, from(rgba(100%, 78%, 0%, 0.7)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 100%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 0%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(rgba(100%, 78%, 0%, 0.7))), radial-gradient(circle at 100% 0%, transparent 16px, rgba(100%, 78%, 0%, 0.7) 16px, rgba(100%, 78%, 0%, 0.7) 17px, transparent 17px), -webkit-gradient(linear, left bottom, left top, from(rgba(100%, 78%, 0%, 0.7)), to(rgba(100%, 78%, 0%, 0.7)));
+    background-image: -o-radial-gradient(100% 100%, circle, transparent 16px, rgba(100%, 78%, 0%, 0.7) 16px, rgba(100%, 78%, 0%, 0.7) 17px, transparent 17px), -o-linear-gradient(left, rgba(100%, 78%, 0%, 0.7), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 100%, circle, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 0%, circle, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), -o-linear-gradient(right, rgba(23, 4, 41, 0.1), rgba(100%, 78%, 0%, 0.7)), -o-radial-gradient(100% 0%, circle, transparent 16px, rgba(100%, 78%, 0%, 0.7) 16px, rgba(100%, 78%, 0%, 0.7) 17px, transparent 17px), -o-linear-gradient(bottom, rgba(100%, 78%, 0%, 0.7), rgba(100%, 78%, 0%, 0.7));
+    background-image: radial-gradient(circle at 100% 100%, transparent 16px, rgba(100%, 78%, 0%, 0.7) 16px, rgba(100%, 78%, 0%, 0.7) 17px, transparent 17px), linear-gradient(to right, rgba(100%, 78%, 0%, 0.7), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 100%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 0%, transparent 16px, rgba(23, 4, 41, 0.1) 16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px), linear-gradient(to left, rgba(23, 4, 41, 0.1), rgba(100%, 78%, 0%, 0.7)), radial-gradient(circle at 100% 0%, transparent 16px, rgba(100%, 78%, 0%, 0.7) 16px, rgba(100%, 78%, 0%, 0.7) 17px, transparent 17px), linear-gradient(to top, rgba(100%, 78%, 0%, 0.7), rgba(100%, 78%, 0%, 0.7));
+    background-size: 17px 17px, calc(100% - 34px) 1px, 17px 17px, 1px calc(100% - 34px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
   }
 
 .answer {
@@ -199,7 +209,7 @@
     .question {
         font-size: 21px;
         padding: 26px 37px 28px 40px;
-        border-radius: 10px;
+        border-radius: 17px;
     }
     .qna .question::before {
         font-size: 32px;
@@ -244,8 +254,25 @@
     .question {
         font-size: 14px;
         padding: 13px 18px 13px 18px;
-        border-radius: 8px;
+        border-radius: 6px;
+        background-image: radial-gradient(circle at 100% 100%, transparent 4px, #ffffff 4px, #ffffff 5px, transparent 5px), -webkit-gradient(linear, left top, right top, from(#ffffff), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(#ffffff)), radial-gradient(circle at 100% 0%, transparent 4px, #ffffff 4px, #ffffff 5px, transparent 5px), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff));
+        background-image: -o-radial-gradient(100% 100%, circle, transparent 4px, #ffffff 4px, #ffffff 5px, transparent 5px), -o-linear-gradient(left, #ffffff, rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 100%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 0%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(right, rgba(23, 4, 41, 0.1), #ffffff), -o-radial-gradient(100% 0%, circle, transparent 4px, #ffffff 4px, #ffffff 5px, transparent 5px), -o-linear-gradient(bottom, #ffffff, #ffffff);
+        background-image: radial-gradient(circle at 100% 100%, transparent 4px, #ffffff 4px, #ffffff 5px, transparent 5px), linear-gradient(to right, #ffffff, rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to left, rgba(23, 4, 41, 0.1), #ffffff), radial-gradient(circle at 100% 0%, transparent 4px, #ffffff 4px, #ffffff 5px, transparent 5px), linear-gradient(to top, #ffffff, #ffffff);
+        background-size: 5px 5px, calc(100% - 10px) 1px, 5px 5px, 1px calc(100% - 10px);
+        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+        background-repeat: no-repeat;
+        
     }
+    .qna.active .question {
+        background-image: radial-gradient(circle at 100% 100%, transparent 4px, #ffc700 4px, #ffc700 5px, transparent 5px), -webkit-gradient(linear, left top, right top, from(#ffc700), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(#ffc700)), radial-gradient(circle at 100% 0%, transparent 4px, #ffc700 4px, #ffc700 5px, transparent 5px), -webkit-gradient(linear, left bottom, left top, from(#ffc700), to(#ffc700));
+        background-image: -o-radial-gradient(100% 100%, circle, transparent 4px, #ffc700 4px, #ffc700 5px, transparent 5px), -o-linear-gradient(left, #ffc700, rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 100%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 0%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(right, rgba(23, 4, 41, 0.1), #ffc700), -o-radial-gradient(100% 0%, circle, transparent 4px, #ffc700 4px, #ffc700 5px, transparent 5px), -o-linear-gradient(bottom, #ffc700, #ffc700);
+        background-image: radial-gradient(circle at 100% 100%, transparent 4px, #ffc700 4px, #ffc700 5px, transparent 5px), linear-gradient(to right, #ffc700, rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to left, rgba(23, 4, 41, 0.1), #ffc700), radial-gradient(circle at 100% 0%, transparent 4px, #ffc700 4px, #ffc700 5px, transparent 5px), linear-gradient(to top, #ffc700, #ffc700);
+        background-size: 5px 5px, calc(100% - 10px) 1px, 5px 5px, 1px calc(100% - 10px);
+        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+        background-repeat: no-repeat;
+    }
+
+
     .qna .answer {
         padding-left: 20px !important;
         padding-right: 15px !important;
@@ -287,7 +314,6 @@
     .question {
         font-size: 14px;
         padding: 8px 47px 8px 15px;
-        border-radius: 8px;
     }
     .qna .answer {
         padding-left: 20px !important;
@@ -339,7 +365,6 @@
     .question {
         font-size: 4vw;
         padding: 4vw 4.5vw 4vw 4vw;
-        border-radius: 2.5vw;
     }
     .qna .answer {
         padding-left: 6vw !important;
