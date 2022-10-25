@@ -34,6 +34,6 @@ const toggleOverflow = () => {
 // Closing of Hamburger
 const deleteBurgerMenu = () => {
   let myBody = document.getElementsByTagName('body')[0]
-  myBody.classList.toggle('ovh')
   toggle.checked = false
+  setTimeout(() => myBody.classList.toggle('ovh'), 100)
 }
