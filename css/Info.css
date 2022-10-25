@@ -13,7 +13,8 @@
     width: 100%;
     z-index: 1;
     bottom: -35px;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     height: 22.2vw;
 }
 .info_bg_bottom img {
@@ -22,7 +23,8 @@
 }
 .info_bg_gd {
     top: -20px;
-    filter: blur(8px);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     opacity: 0.3;
 }
 
@@ -31,7 +33,8 @@
     width: 100%;
     z-index: 1;
     bottom: -35px;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     height: 22.2vw;
     display: none;
 }
@@ -41,7 +44,8 @@
 }
 .info_bg_gd768 {
     top: -20px;
-    filter: blur(8px);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     opacity: 0.3;
 }
 
@@ -50,7 +54,8 @@
     width: 100%;
     z-index: 1;
     bottom: -909px;
-    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
     height: 22.2vw;
     display: none;
 }
@@ -60,7 +65,8 @@
 }
 .info_bg_gd480 {
     top: -20px;
-    filter: blur(8px);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     opacity: 0.3;
 }
 
@@ -71,8 +77,13 @@
 .info_description {
     position: relative;
     padding-top: 176px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 22px;
     z-index: 2;
 }
@@ -127,31 +138,55 @@
     position: relative;
     z-index: 2;
     margin-bottom: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 101px;
 }
 
 .info_stats_soccer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 15px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .info_stats_alpha {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 15px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .info_stats_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 4px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .info_stats_list-soccer {
@@ -209,9 +244,15 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -227,8 +268,12 @@
     height: 728.51px;
     left: -296.69px;
     top: -62.2px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.12%, rgba(30, 1, 63, 0.65)), to(rgba(30, 1, 63, 0)));
+    background: -o-linear-gradient(top, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
     background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
-    transform: rotate(-45.66deg);
+    -webkit-transform: rotate(-45.66deg);
+        -ms-transform: rotate(-45.66deg);
+            transform: rotate(-45.66deg);
 }
 .info_bg1 {
     position: absolute;
@@ -238,8 +283,11 @@
     top: 213px;
     background: rgba(41, 190, 248, 0.2);
     mix-blend-mode: normal;
-    filter: blur(300px);
-    transform: rotate(15deg);
+    -webkit-filter: blur(300px);
+            filter: blur(300px);
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
     z-index: 2;
 }
 .info_bg2 {
@@ -248,8 +296,12 @@
     height: 380px;
     left: 0px;
     bottom: 0px; 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.12%, rgba(30, 1, 63, 0.65)), to(rgba(30, 1, 63, 0))); 
+    background: -o-linear-gradient(top, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%); 
     background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 /*  */
@@ -278,7 +330,9 @@
     .info_stats {
         margin-top: 189px;
         gap: 15px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .info_stats_soccer {
         gap: 14px;
@@ -362,18 +416,27 @@
         width: 165px;
     }
     .info_stats {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 177px;
         gap: 50px;
     }
     .info_stats_soccer {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 8px;
         left: auto;
     }
     .info_stats_alpha {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 9px;
         left: auto;
     }
@@ -391,7 +454,9 @@
     .info_bg_bottom768 {
         display: block;
         bottom: -509px;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 }
 
@@ -404,8 +469,12 @@
     }
     .info_description {
         padding-top: 381px;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .info_description_title {
         text-align: center;
@@ -476,7 +545,7 @@
         background-position-y: 0px;
     }
     .info_description_title {
-        font-size: 47.4926px;
+        font-size: 45px;
         line-height: 82%;
     }
     .info_description_text{
@@ -515,7 +584,8 @@
     }
     .info_bg_gd {
         top: -5px;
-        filter: blur(2px);
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
         opacity: 0.3;
     }
     .info_bg_bottom768 {
@@ -523,7 +593,8 @@
     }
     .info_bg_gd768 {
         top: -8px;
-        filter: blur(3px);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
         opacity: 0.3;
     }
     .info_bg_bottom480 {
@@ -531,7 +602,8 @@
     }
     .info_bg_gd480 {
         top: -7px;
-        filter: blur(3px);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
         opacity: 0.3;
     }
 }

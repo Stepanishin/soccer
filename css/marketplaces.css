@@ -12,9 +12,15 @@
     width: 100%;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 42px 76px;
     border: 1px solid #ffffff;
 }

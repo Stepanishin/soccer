@@ -33,7 +33,7 @@ const toggleOverflow = () => {
 // ////////////////////////////////////////////////////////////
 // Closing of Hamburger
 const deleteBurgerMenu = () => {
-  toggle.checked = false
   let myBody = document.getElementsByTagName('body')[0]
   myBody.classList.toggle('ovh')
+  toggle.checked = false
 }

@@ -13,14 +13,16 @@
     width: 100%;
     z-index: 1;
     top: -312px;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   .FAQ img {
     position: absolute;
   }
   .FAQ_bg_gd {
     top: -20px;
-    filter: blur(8px);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     opacity: 0.3;
   }
 
@@ -30,6 +32,8 @@
 
 .qna {
     cursor: pointer;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
     transition: 0.6s;
     margin-bottom: 30px;
 }
@@ -40,12 +44,21 @@
     font-family: 'TT Norms Pro 700';
     font-size: 36px;
     line-height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #FFFFFF;
     display: flex;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: color 0.1s;
+    -o-transition: color 0.1s;
     transition: color 0.1s;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 14px;
@@ -66,11 +79,17 @@
     color: #FFFFFF;
     display: inline-block;
     margin-right: 5px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
     right: 30px;
   }
   .qna.active .question::before {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
     color: #FFC700;
   }
   .qna.active .question {
@@ -94,14 +113,20 @@
 }
 .qna .answer {
     height: 0px;
+    -webkit-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
     transition: 0.1s linear;
     overflow: hidden;
     padding: 0 0.8em;
 }
 
 .FAQ_btn_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .FAQ_btn {
@@ -295,7 +320,8 @@
     }
     .FAQ_bg_gd {
         top: -9px;
-        filter: blur(3px);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
         opacity: 0.3;
     }
 }

@@ -6,7 +6,8 @@
 .roadmap_bg {
     position: absolute;
     width: 100%;
-    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
     z-index: 1;
     bottom: -484px;
 }
@@ -15,7 +16,8 @@
 }
 .roadmap_bg_gd {
     top: -20px;
-    filter: blur(8px);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     opacity: 0.3;
 }
 
@@ -36,10 +38,17 @@
 }
 
 .roadmap_content_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 16px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .roadap_content_title {
@@ -72,7 +81,9 @@
 }
 
 .roadmap_content_start {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .roadmap_content_i_description {
@@ -82,13 +93,17 @@
     color: #FFFFFF;
     position: absolute;
     background: #18032D;
-    box-shadow: 9px 9px 19px 8px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(29px);
+    -webkit-box-shadow: 9px 9px 19px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 9px 9px 19px 8px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(29px);
+            backdrop-filter: blur(29px);
     border-radius: 14px;
     width: 287.06px;
     padding: 27px 23px;
     border: 1px solid #FFFFFF;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
     z-index: 5;
 }
 
@@ -104,12 +119,17 @@
 }
 
 .roadmap_content_i:hover + div {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .roadmap_content_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: absolute;
     top: 396px;
     left: 198px;
@@ -251,30 +271,50 @@
 
 /* Добавляем анимацию current событию */
 .roadmap_current_event {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: bounce;
-    animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+@-webkit-keyframes bounce {
+    0%   { -webkit-transform: translateY(0); transform: translateY(0); }
+    50%  { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+    100% { -webkit-transform: translateY(0); transform: translateY(0); }
 }
 @keyframes bounce {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+    0%   { -webkit-transform: translateY(0); transform: translateY(0); }
+    50%  { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+    100% { -webkit-transform: translateY(0); transform: translateY(0); }
 }
 
 .roadmap_mobile_wrapper {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: -297px;
     left: 10px;
     gap: 93px;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
 }
 
 .roadmap_mobile_content_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 5px;
     max-width: 170px;
 }
@@ -459,7 +499,8 @@
     .roadmap_bg {
         position: absolute;
         width: 100%;
-        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+                transform: rotateX(180deg);
         z-index: 1;
         bottom: -330px;
     }
@@ -649,11 +690,8 @@
     }
     .roadmap_bg_gd {
         top: -9px;
-        filter: blur(3px);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
         opacity: 0.3;
     }
-}
-
-@media screen and (max-width: 319px) {
-    
 }

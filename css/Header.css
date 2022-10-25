@@ -5,16 +5,24 @@
     left: 0;
     right: 0;
     bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(16.23%, #1E013F), to(rgba(30, 1, 63, 0)));
+    background: -o-linear-gradient(top, #1E013F 16.23%, rgba(30, 1, 63, 0) 100%);
     background: linear-gradient(180deg, #1E013F 16.23%, rgba(30, 1, 63, 0) 100%);
     position: fixed;
     z-index: 11;
 }
 
 .header_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 32px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 
@@ -25,8 +33,12 @@
 }
 
 .header_nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 37px;
     font-family: "TT Norms Pro 700";
     font-weight: 700;
@@ -46,6 +58,8 @@
 	height: 2px; /*задаём ширину линии*/
 	background-color: #FFC700; /*задаём цвет линии*/
 	content: "";
+	-webkit-transition: width 0.3s ease-out;
+	-o-transition: width 0.3s ease-out;
 	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
 
@@ -54,8 +68,12 @@
 }
 
 .header_social_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 31px;
     left: 4px;
     top: 4px;
@@ -68,6 +86,8 @@
 }
 
 .header_social_list_item svg path {
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
     transition: all .8s ease;
 }
 
@@ -106,16 +126,24 @@
 }
 
 .Header_nav_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    transform: scale(0);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     top: -32px;
     left: 0;
     width: 100%;
+    background: -o-linear-gradient(269.88deg, #1C0236 0%, #000000 100%);
     background: linear-gradient(180.12deg, #1C0236 0%, #000000 100%);
     position: fixed;
-    /* position: absolute; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -128,23 +156,40 @@
     width: 400px;
     height: 696px;
     position: relative;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     top: 112px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .Header_nav_mobile_List {
     position: relative;
     top: 43px;
     gap: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .Header_nav_mobile_List a {
@@ -157,8 +202,12 @@
 }
 
 .header_social_list_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     gap: 56px;
     position: relative;
@@ -186,12 +235,23 @@
   
   .hamburger {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 7px;
     z-index: 5;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     left: 7px;
@@ -202,6 +262,8 @@
     display: block;
     height: 2px;
     background: #FFC700;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -221,21 +283,29 @@
 
 #toggle:checked + .hamburger .top-bun {
     width: 39.56px;
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 #toggle:checked + .hamburger .bottom-bun {
     opacity: 0;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 #toggle:checked + .hamburger .meat {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     margin-top: -9px;
 }
 
 #toggle:checked + .hamburger + .Header_nav_mobile {
-    transform: scale(1);  
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);  
 }
 
 
@@ -259,7 +329,10 @@
         top: 32px;
         right: 32px;
         left: auto;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 19px;
     }
     .header_social_list_item-twitter::after {

@@ -1,12 +1,13 @@
 .collections {
     padding-bottom: 350px;
     position: relative;
-    /* overflow: hidden; */
 }
 .collection_bg {
     position: absolute;
     width: 100%;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     z-index: 1;
     bottom: 0;
 }
@@ -15,7 +16,8 @@
 }
 .collection_bg_gd {
     top: -20px;
-    filter: blur(8px);
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     opacity: 0.3;
 }
 
@@ -30,9 +32,13 @@
 }
 
 .collections_alpha {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 106px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .collections_alpha_img {
@@ -47,8 +53,10 @@
     position: absolute;
     width: 387.53px;
     height: 247.17px;
+    background: -o-linear-gradient(312.51deg, #00D1FF -2.94%, #FF54CF 100%);
     background: linear-gradient(137.49deg, #00D1FF -2.94%, #FF54CF 100%);
-    filter: blur(100px);
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
     z-index: 1;
 }
 .collections_soccer_img_bg {
@@ -57,8 +65,10 @@
     height: 247.17px;
     bottom: 0;   
     right: 0;
+    background: -o-linear-gradient(312.51deg, #00D1FF -2.94%, #FF54CF 100%);
     background: linear-gradient(137.49deg, #00D1FF -2.94%, #FF54CF 100%);
-    filter: blur(100px);
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
 }
 
 .collections_alpha_content-title {
@@ -94,13 +104,23 @@
 }
 
 .collections_alpha_content-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 31px;
 }
 .collections_soccer_content-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 31px;
 }
 
@@ -130,9 +150,13 @@
 
 .collections_soccer {
     margin-top: 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 80px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .collections_soccer_content {
@@ -147,6 +171,8 @@
     font-family: 'TT Norms Pro 500';
     font-size: 36px;
     line-height: 126%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     letter-spacing: 0.188281px;
     text-transform: capitalize;
@@ -169,7 +195,9 @@
     z-index: 2;
     height: 197vw;
     height: 2800px;
-    transform: scaleX(2);
+    -webkit-transform: scaleX(2);
+        -ms-transform: scaleX(2);
+            transform: scaleX(2);
 }
 .collections_bg1 {
     position: absolute;
@@ -178,7 +206,9 @@
     top: 722px;
     height: 153vw;
     height: 2200px;
-    transform: scaleX(2);
+    -webkit-transform: scaleX(2);
+        -ms-transform: scaleX(2);
+            transform: scaleX(2);
 }
 .collections_border {
     height: 2px;
@@ -324,7 +354,9 @@
     .collections_soccer {
         margin-top: 63px;
         gap: 0px;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .collections_soccer_content {
         max-width: 360px;
@@ -363,8 +395,13 @@
     }
     .collections_alpha {
         gap: 42px;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .collections_alpha_content-title {
         margin-bottom: 34px;
@@ -383,9 +420,16 @@
     .collections_soccer {
         margin-top: 93px;
         gap: 45px;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .collections_soccer_content-title {
         margin-bottom: 34px;
@@ -430,9 +474,6 @@
     .collections_soccer {
         margin-top: 71px;
     }
-    /* .collections_soccer_content-title {
-        font-size: 21px;
-    } */
     .collections_soccer_content-list {
         max-width: 287px;
         padding-right: 13px;
@@ -441,15 +482,13 @@
     .collections_soccer_content {
         left: 0px;
     }
-    /* .collections_soccer_content-title {
-        max-width: 250px;
-    } */
     .collection_bg {
         bottom: 205px;
     }
     .collection_bg_gd {
         top: -8px;
-        filter: blur(3px);
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
         opacity: 0.3;
     }
 }

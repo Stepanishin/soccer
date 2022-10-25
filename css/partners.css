@@ -10,9 +10,15 @@
     margin-top: 80px;
     width: 100%;
     padding: 60px 70px 50px 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items:center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     border: 1px solid #ffffff;
@@ -97,8 +103,11 @@
     .partners_list_container {
         margin-top: 40px;
         padding: 20px 28px 20px 28px;
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         gap: 30px;
     }
     .partners_img_ebay {
