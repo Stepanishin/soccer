@@ -1,6 +1,4 @@
-/* HEADER //////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .header {
-    z-index: 3;
     height: 138px;
     position: absolute;
     top: 0;
@@ -8,6 +6,8 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(180deg, #1E013F 16.23%, rgba(30, 1, 63, 0) 100%);
+    position: fixed;
+    z-index: 11;
 }
 
 .header_container {

@@ -4,10 +4,10 @@
 
 .footer_bg {
     position: absolute;
-    width: 125%;
+    width: 100%;
     z-index: 1;
     top: 196px;
-    transform: rotate(171deg);
+    transform: rotate(180deg);
   }
   .footer img {
     position: absolute;

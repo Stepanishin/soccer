@@ -399,9 +399,9 @@
         gap: 25px;
         position: relative;
         top: 5px;
-        left: 23px;
+        left: -14px;
         width: 400px;
-        padding-right: 23px;
+        padding-right: 32px;
     }
     .collections_link {
         font-size: 16px;
@@ -430,20 +430,20 @@
     .collections_soccer {
         margin-top: 71px;
     }
-    .collections_soccer_content-title {
+    /* .collections_soccer_content-title {
         font-size: 21px;
-    }
+    } */
     .collections_soccer_content-list {
         max-width: 287px;
-        padding-right: 0px;
-        left: 15px;
+        padding-right: 13px;
+        left: 30px;
     }
     .collections_soccer_content {
         left: 0px;
     }
-    .collections_soccer_content-title {
+    /* .collections_soccer_content-title {
         max-width: 250px;
-    }
+    } */
     .collection_bg {
         bottom: 205px;
     }
