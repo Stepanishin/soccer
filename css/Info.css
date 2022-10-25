@@ -182,7 +182,8 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    background: rgba(255, 255, 255, 0.08);
+
+            background: RGBA(23,4,41,0.4);
     border-radius: 4px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -193,6 +194,22 @@
     background-size: 5px 5px, calc(100% - 10px) 1px, 5px 5px, 1px calc(100% - 10px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-height: 900px) {
+    .info_stats_list {
+
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
+
+.info_blueBottomBg {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+transform: rotate(180deg);
+height: 60vh;
+position: absolute;
+bottom: 0;
 }
 
 .info_stats_list-soccer {
@@ -383,6 +400,9 @@
         height: 33px;
         line-height: 150%;
     }
+    .info_stats_list {
+        background: rgba(255, 255, 255, 0.08);
+    }
     /* DECORATION */
     .info_bg {
         z-index: 2;
@@ -394,6 +414,9 @@
         top: 425px;
     }
     .info_bg2 {
+        display: none;
+    }
+    .info_blueBottomBg {
         display: none;
     }
 }
@@ -446,6 +469,7 @@
         gap: 9px;
         left: auto;
     }
+
     /* DECORATION */
     .info_bg {
         width: 935.61px;
