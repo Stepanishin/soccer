@@ -33,7 +33,8 @@ const toggleOverflow = () => {
 // ////////////////////////////////////////////////////////////
 // Closing of Hamburger
 const deleteBurgerMenu = () => {
-  let myBody = document.getElementsByTagName('body')[0]
+  // let myBody = document.getElementsByTagName('body')[0]
   toggle.checked = false
-  setTimeout(() => myBody.classList.toggle('ovh'), 100)
+  toggleOverflow()
+  // setTimeout(() => myBody.classList.toggle('ovh'), 100)
 }
