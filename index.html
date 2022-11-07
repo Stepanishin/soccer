@@ -846,19 +846,23 @@
             await console.log('ME')
             const options = {
                     headers: {
-                      'Content-Type': 'application/json',
-                      'Accept': 'application/json'
+                      // 'Content-Type': 'application/json',
+                      // 'Accept': 'application/json'
+                      method: 'GET',
+                      redirect: 'follow'
                         }
                     }
 
             await fetch('https://api-mainnet.magiceden.dev/v2/collections/9h4HgBMX7cZ7sm6uBNtRmnkMYpEFtZfWS5h74HAEFsuD/stats', options)
-            .then((response) => {
-                const result = response.json();
-                return result
-            })
-            .then((data) => {
-                console.log(data)
-            })
+            // .then((response) => {
+            //     const result = response.json();
+            //     return result
+            // })
+            // .then((data) => {
+            //     console.log(data)
+            // })
+            .then(response => response.text())
+  .then(result => console.log(result))
           }
           window.onload = () => {
             GetAllDataOnce();
