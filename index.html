@@ -706,7 +706,7 @@
             querySnapshotTokens2.forEach((doc) => {
               tokenData = doc.data();
             });
-    
+            console.log(tokenData)
             document.getElementsByClassName("statisticValue")[0].textContent =
               tokenData.rarityNumber;
     
@@ -841,9 +841,28 @@
               });
             });
           }
+
+          async function getMagicEdenPrice() {
+            await console.log('ME')
+            const options = {
+                    headers: {
+                        'Content-type': 'application/json; charset=utf-8',
+                        }
+                    }
+
+            await fetch('api-devnet.magiceden.dev/v2/collections?offset=0&limit=3', options)
+            .then((response) => {
+                const result = response.json();
+                return result
+            })
+            .then((data) => {
+                console.log(data)
+            })
+          }
           window.onload = () => {
             GetAllDataOnce();
             searchToken(254);
+            getMagicEdenPrice()
           };
         </script>
         <script src="./js/index.js" defer></script>
