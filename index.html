@@ -850,9 +850,9 @@
                       // 'Accept': 'application/json'
                       method: 'GET',
                       redirect: 'follow',
-                      mode: 'no-cors',
-                      credentials: 'include',
-                      'Access-Control-Allow-Origin':'https://soccer-ten.vercel.app'
+                      // mode: 'no-cors',
+                      // credentials: 'include',
+                      // 'Access-Control-Allow-Origin':'https://soccer-ten.vercel.app'
                       // 'corse': 'no-corse'
                       // mode: 'cors',
                       // credentials: 'include',
@@ -860,7 +860,7 @@
                         }
                     }
 
-            await fetch('https://api-mainnet.magiceden.dev/v2/collections/9h4HgBMX7cZ7sm6uBNtRmnkMYpEFtZfWS5h74HAEFsuD/stats', options)
+            await fetch('https://cors-anywhere.herokuapp.com/https://api-mainnet.magiceden.dev/v2/collections/9h4HgBMX7cZ7sm6uBNtRmnkMYpEFtZfWS5h74HAEFsuD/stats', options)
             // .then((response) => {
             //     const result = response.json();
             //     return result
