@@ -183,7 +183,7 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
 
-            background: RGBA(23,4,41,0.4);
+            background: RGBA(23,4,41,0.7);
     border-radius: 4px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -196,12 +196,7 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-height: 900px) {
-    .info_stats_list {
 
-        background: rgba(255, 255, 255, 0.08);
-    }
-}
 
 .info_blueBottomBg {
     width: 100%;
@@ -230,6 +225,9 @@ bottom: 0;
     line-height: 175%;
     text-transform: uppercase;
     color: #ffffff;
+    background-color: RGBA(23,4,41,0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .info_stats_title span {
@@ -680,5 +678,14 @@ bottom: 0;
     }
     .info_stats_list-alpha {
         height: 22vw;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .info_stats_list {
+        background: rgba(255, 255, 255, 0.20);
+    }
+    .info_stats_title {
+        background: none;
     }
 }
