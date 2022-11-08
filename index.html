@@ -849,7 +849,15 @@
                       // 'Content-Type': 'application/json',
                       // 'Accept': 'application/json'
                       method: 'GET',
-                      redirect: 'follow'
+                      redirect: 'follow',
+                      mode: 'no-cors',
+                      credentials: 'include',
+                      // "Content-Type": "text/xml",
+                      // 'Access-Control-Allow-Origin': 'file:///C:/myfiles/dev/lazysoccer/index.html'
+                      // 'corse': 'no-corse'
+                      // mode: 'cors',
+                      // credentials: 'include',
+                      // method: 'GET',
                         }
                     }
 
@@ -862,7 +870,7 @@
             //     console.log(data)
             // })
             .then(response => response.text())
-  .then(result => console.log(result))
+            .then(result => console.log(result))
           }
           window.onload = () => {
             GetAllDataOnce();
