@@ -22,7 +22,7 @@
   }
 
 .footer_container {
-    margin-top: 150px;
+    margin-top: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -122,7 +122,7 @@
 
 @media screen and (max-width: 1439px) {
     .footer_container {
-        margin-top: 60px;
+        margin-top: 250px;
         padding: 61px 0px 103px 0px;
         gap: 30px;
     } 
@@ -182,7 +182,7 @@
 
 @media screen and (max-width: 999px) {
     .footer_container {
-        margin-top: 90px;
+        margin-top: 250px;
         padding: 50px 0px 50px 0px;
         gap: 20px;
     } 
