@@ -441,3 +441,10 @@
         left: 14vw;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .header_container {
+        max-width: 1427px;
+        transform: scale(1.2);
+    }
+}

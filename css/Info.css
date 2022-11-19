@@ -697,3 +697,16 @@ bottom: 0;
         color: #D9D9D9; 
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .info_container {
+        padding-top: 100px;
+    }
+    .info_description {
+        transform: scale(1.2);
+    }
+    .info_stats {
+        margin-top: 200px;
+        transform: scale(1.2);
+    }
+}
