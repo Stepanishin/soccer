@@ -680,6 +680,8 @@
     }
     .roadmap_content_img_mobile {
         padding-right: 200px;
+        position: relative;
+        left: -151px;
     }
     .roadmap_bg {
         bottom: -100px;
