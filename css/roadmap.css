@@ -700,3 +700,15 @@
         opacity: 0.3;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .roadmap_container {
+        margin-top: 850px;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+    .roadmap_bg {
+        bottom: -781px;
+    }
+  }

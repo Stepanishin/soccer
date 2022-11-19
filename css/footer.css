@@ -392,3 +392,12 @@
         line-height: 5vw;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .footer_container {
+        margin-top: 550px;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+}

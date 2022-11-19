@@ -530,3 +530,15 @@
         width: 59vw;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .collections_container {
+        margin-top: 230px;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+    .collection_bg {
+        bottom: -262px;
+    }
+}
